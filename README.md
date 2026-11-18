@@ -1,4 +1,4 @@
-# 📡 Placement of Wireless Access Points for Smart Construction Using LLM-Driven Agents
+# Placement of Wireless Access Points for Smart Construction Using LLM-Driven Agents
 
 
 > **MOO (Modelling-Optimization-Operation) Framework**: Integrating BIM data, Sionna RT ray-tracing, genetic algorithm optimization, and LLM-driven dual-agent workflow automation for construction-stage-aware WAP placement
@@ -9,11 +9,11 @@
 # 1 Summary of supplemental materials
 This table below summarizes the key directories of this repository and the supplemental materials supporting the paper.
 
-<img width="900" height="600" alt="Frame Architecture" src="MOO_Framework/data/visualization_bases/frame_architecture.png" />
+![Frame Architecture](https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/MOO_Framework/data/visualization_bases/frame_architecture.png?raw=true)
 
-<img width="900" height="600" alt="Enclosure Architecture" src="MOO_Framework/data/visualization_bases/enclosure_architecture.png" />
+![Enclosure Architecture](https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/MOO_Framework/data/visualization_bases/enclosure_architecture.png?raw=true)
 
-The supplemental materials (`Supplement_Final_English/`) include the following tables:
+The supplemental materials (`Supplementary_Tables/`) include the following tables:
 
 | Table | Content |
 |-------|---------|
@@ -43,23 +43,27 @@ The data transformation from BIM's IFC format to Sionna RT-compatible PLY meshes
 
 This library includes **17 core functions** divided into three groups: **G-series** (geometry conversion, 7 functions), **P-series** (material property conversion, 3 functions), and **W-series** (wireless-propagation property conversion, 7 functions).
 
-![IFC2PLY&XML Function Library](MOO_Framework/data/visualization_bases/frame_architecture.png)
+![IFC2PLY&XML Function Library](https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/MOO_Framework/data/visualization_bases/frame_architecture.png?raw=true)
 
 ↑↑↑ The IFC2PLY&XML function library released as an open-source Python package (`pip install ifc2ply_xml`)
 
 The G-series functions convert IFC building elements (columns, beams, walls, doors, windows, slabs, roofs) into vertex-based PLY meshes. The P-series functions map IFC material attributes to XML entries. The W-series functions encode wireless-propagation properties including reflection loss, transmission loss, and diffraction loss parameters.
 
-![Enclosure Architecture](MOO_Framework/data/visualization_bases/enclosure_architecture.png)
+![Enclosure Architecture](https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/MOO_Framework/data/visualization_bases/enclosure_architecture.png?raw=true)
 
 ↑↑↑ Signal coverage models for the frame stage (left) and enclosure stage (right), constructed from IFC data via the IFC2PLY&XML library
 
 ### Floor-level visualization bases
 
-<img width="400" height="300" alt="Frame 1F" src="MOO_Framework/data/visualization_bases/frame_1F_cutaway.png" /> <img width="400" height="300" alt="Frame 2F" src="MOO_Framework/data/visualization_bases/frame_2F_cutaway.png" /> <img width="400" height="300" alt="Frame 3F" src="MOO_Framework/data/visualization_bases/frame_3F_cutaway.png" />
+![Frame 1F](https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/MOO_Framework/data/visualization_bases/frame_1F_cutaway.png?raw=true)
+![Frame 2F](https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/MOO_Framework/data/visualization_bases/frame_2F_cutaway.png?raw=true)
+![Frame 3F](https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/MOO_Framework/data/visualization_bases/frame_3F_cutaway.png?raw=true)
 
 ↑↑↑ Frame stage — Floor 1, 2, 3 cutaway views
 
-<img width="400" height="300" alt="Enclosure 1F" src="MOO_Framework/data/visualization_bases/enclosure_1F_cutaway.png" /> <img width="400" height="300" alt="Enclosure 2F" src="MOO_Framework/data/visualization_bases/enclosure_2F_cutaway.png" /> <img width="400" height="300" alt="Enclosure 3F" src="MOO_Framework/data/visualization_bases/enclosure_3F_cutaway.png" />
+![Enclosure 1F](https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/MOO_Framework/data/visualization_bases/enclosure_1F_cutaway.png?raw=true)
+![Enclosure 2F](https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/MOO_Framework/data/visualization_bases/enclosure_2F_cutaway.png?raw=true)
+![Enclosure 3F](https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/MOO_Framework/data/visualization_bases/enclosure_3F_cutaway.png?raw=true)
 
 ↑↑↑ Enclosure stage — Floor 1, 2, 3 cutaway views
 
@@ -98,13 +102,13 @@ The WAP count is determined iteratively from N = 1: progressively add WAPs and r
 Below are the WAP placement optimization codes and baseline comparison codes:
 
 ```
-tools/wap_layout_optimization/
+MOO_Framework/tools/wap_layout_optimization/
 ├── define_problem.py        ← Optimization problem formulation
 ├── build_surrogate.py        ← Sionna RT surrogate model construction
 ├── generate_candidates.py    ← 150-site candidate dictionary generation
 └── optimize.py              ← GA-based layout optimization + 600-point evaluation
 
-baselines/
+MOO_Framework/baselines/
 ├── expert_layouts.py        ← EbM1 (Huawei), EbM2 (Akuvox), EbM3 (Siemens)
 ├── geometric_layouts.py     ← GcM1 (hexagonal), GcM2 (circular) coverage
 ├── geometry.py              ← Geometric coverage primitives
@@ -154,27 +158,27 @@ Human Request
 
 The 8 tools are organized into two MCP servers:
 
-**BIM-based Scene Modelling MCP Server** (`mcp_servers/bim_server.py`):
+**BIM-based Scene Modelling MCP Server** (`MOO_Framework/mcp_servers/bim_server.py`):
 | Tool | Function | Code |
 |------|----------|------|
-| 1. Parse IFC Building | Parse IFC file, extract building elements and material associations | `tools/bim_data_processing/parse_ifc_building.py` |
-| 2. Tessellate IFC Objects | Triangulate IFC elements into mesh geometry | `tools/bim_data_processing/tessellate_ifc_objects.py` |
-| 3. Export Object Meshes | Export PLY meshes + XML scene file with radio materials | `tools/bim_data_processing/export_object_meshes.py` |
-| 4. Generate Mitsuba Scene | Produce Sionna-compatible Mitsuba XML scene | `tools/bim_data_processing/generate_mitsuba_scene.py` |
+| 1. Parse IFC Building | Parse IFC file, extract building elements and material associations | `MOO_Framework/tools/bim_data_processing/parse_ifc_building.py` |
+| 2. Tessellate IFC Objects | Triangulate IFC elements into mesh geometry | `MOO_Framework/tools/bim_data_processing/tessellate_ifc_objects.py` |
+| 3. Export Object Meshes | Export PLY meshes + XML scene file with radio materials | `MOO_Framework/tools/bim_data_processing/export_object_meshes.py` |
+| 4. Generate Mitsuba Scene | Produce Sionna-compatible Mitsuba XML scene | `MOO_Framework/tools/bim_data_processing/generate_mitsuba_scene.py` |
 
-**WAP Placement Optimization MCP Server** (`mcp_servers/wap_server.py`):
+**WAP Placement Optimization MCP Server** (`MOO_Framework/mcp_servers/wap_server.py`):
 | Tool | Function | Code |
 |------|----------|------|
-| 5. Define Problem | Set up optimization objectives, constraints, and sensor profile | `tools/wap_layout_optimization/define_problem.py` |
-| 6. Build Surrogate | Build Sionna RT radio map surrogate model | `tools/wap_layout_optimization/build_surrogate.py` |
-| 7. Generate Candidates | Generate and validate 150-site candidate dictionary | `tools/wap_layout_optimization/generate_candidates.py` |
-| 8. Optimize | Run GA optimization + evaluate 600-receiver results | `tools/wap_layout_optimization/optimize.py` |
+| 5. Define Problem | Set up optimization objectives, constraints, and sensor profile | `MOO_Framework/tools/wap_layout_optimization/define_problem.py` |
+| 6. Build Surrogate | Build Sionna RT radio map surrogate model | `MOO_Framework/tools/wap_layout_optimization/build_surrogate.py` |
+| 7. Generate Candidates | Generate and validate 150-site candidate dictionary | `MOO_Framework/tools/wap_layout_optimization/generate_candidates.py` |
+| 8. Optimize | Run GA optimization + evaluate 600-receiver results | `MOO_Framework/tools/wap_layout_optimization/optimize.py` |
 
 A **shared structured data record** maintains data continuity across the tool chain. Each tool reads required upstream data and appends its own outputs, preserving all previously generated information for subsequent tools.
 
 ### Dual-Agent System
 
-The planning agent (`agents/planning_agent.py`) and execution agent (`agents/execution_agent.py`) follow a **plan-and-execute** pattern:
+The planning agent (`MOO_Framework/agents/planning_agent.py`) and execution agent (`MOO_Framework/agents/execution_agent.py`) follow a **plan-and-execute** pattern:
 
 1. **Planning Agent** — Receives the human task request, identifies required inputs/outputs, decomposes into an ordered preliminary plan
 2. **Execution Agent** — Validates the plan against available MCP tools, repairs missing arguments, produces final execution sequence, and invokes all 8 tools with **Thought–Action–Observation** logging
@@ -182,11 +186,11 @@ The planning agent (`agents/planning_agent.py`) and execution agent (`agents/exe
 Each of the **six candidate LLMs** (Claude Opus 5, DeepSeek, Qwen, GPT-6, GPT-5.6 Sol, Grok 4.3) can drive both agents. Evaluation uses a common task matrix with **task completion rate** (all 8 MCP tool calls successful) as the metric.
 
 ```
-agents/
+MOO_Framework/agents/
 ├── planning_agent.py        ← Receives task, generates 12-step preliminary plan
 └── execution_agent.py       ← Validates plan, invokes 8 MCP tools, logs Thought-Action-Observation
 
-mcp_servers/
+MOO_Framework/mcp_servers/
 ├── bim_server.py            ← Exposes 4 BIM scene modelling tools via MCP
 └── wap_server.py            ← Exposes 4 WAP optimization tools via MCP
 ```
@@ -196,7 +200,7 @@ mcp_servers/
 
 ## 3.4 Optimization results and performance comparison
 
-8 baseline schemes are developed for comparison with the **Proposed Method (PM)**:
+5 baseline schemes are developed for comparison with the **Proposed Method (PM)**:
 
 **Expert-based Approaches**: Huawei-inspired (EbM1), Akuvox-inspired (EbM2), Siemens-inspired (EbM3)
 
@@ -251,10 +255,10 @@ The six-LLM benchmark covers **480 formal tasks** (6 models × 2 stages × 5 sen
 Of 480 assigned tasks, **474 succeeded**; six Grok-4.7 tasks failed at the LLM/API layer under the single-attempt policy. The success criterion requires: the LLM drives both planning and execution phases, all 8 MCP tool calls return success, and the overall task status indicates success.
 
 The full task matrix and per-task audit records are available in:
-- `six_llm_task_matrix.md` — Complete 480-task matrix
-- `result/six_llm/completion_rate.json` — Per-model completion rates
-- `result/six_llm/tasks/` — One JSON record per task (480 records)
-- `docs/Table_S5_Six_LLM_Run_Records.xlsx` — Detailed run records
+- `MOO_Framework/result/six_llm/completion_rate.json` — Per-model completion rates
+- `MOO_Framework/result/six_llm/tasks/` — One JSON record per task (480 records)
+- `MOO_Framework/result/six_llm/completion_rate.csv` — Completion rate CSV
+- `Supplementary_Tables/Table_S5_Six_LLM_Run_Records.xlsx` — Detailed run records
 
 
 # 4 Discussion
@@ -272,10 +276,10 @@ Each scene has a dedicated 3D priority volume (zones weighted 2× for signal qua
 
 The per-floor coordinate-registered heatmaps and violin plots comparing PM against all baselines are generated by:
 ```
-python plot_registered_floor_heatmaps.py   ← Per-floor RSRP/RSRQ/SINR heatmaps
-python plot_stacked_registered_heatmaps.py ← 3D stacked floor overviews
-python plot_group_violin.py               ← Per-receiver distribution violin plots
-python plot_uplift.py                     ← Composite score uplift bar charts
+python MOO_Framework/plot_registered_floor_heatmaps.py   ← Per-floor RSRP/RSRQ/SINR heatmaps
+python MOO_Framework/plot_stacked_registered_heatmaps.py ← 3D stacked floor overviews
+python MOO_Framework/plot_group_violin.py               ← Per-receiver distribution violin plots
+python MOO_Framework/plot_uplift.py                     ← Composite score uplift bar charts
 ```
 
 ## 4.2 Transferability of the MOO framework
@@ -304,18 +308,20 @@ git clone https://github.com/yuzhongdexishu/wap-placement-moo.git
 cd wap-placement-moo
 
 # Install dependencies (Python 3.11 required)
-python -m pip install -r requirements.txt
+python -m pip install -r MOO_Framework/requirements.txt
 
 # Configure credentials
-Copy-Item config/llm_config.example.json config/llm_config.json
-Copy-Item config/models.example.json config/models.json
+Copy-Item MOO_Framework/config/llm_config.example.json MOO_Framework/config/llm_config.json
+Copy-Item MOO_Framework/config/models.example.json MOO_Framework/config/models.json
 ```
 
-Edit `config/llm_config.json` and `config/models.json` with your API credentials. The example files contain empty `api_key` fields. These files are in `.gitignore` and will never be committed.
+Edit `MOO_Framework/config/llm_config.json` and `MOO_Framework/config/models.json` with your API credentials. The example files contain empty `api_key` fields. These files are in `.gitignore` and will never be committed.
 
 ## 5.2 Run the MOO framework (Proposed Method)
 
 ```powershell
+cd MOO_Framework
+
 # Terminal 1: Start all four services
 python run_all.py
 # Starts: BIM MCP Server (:8101), WAP MCP Server (:8102),
@@ -328,12 +334,14 @@ python send_task_moo.py
 
 Or launch services in background:
 ```powershell
+cd MOO_Framework
 .\_launch_services2.ps1
 ```
 
 ## 5.3 Run baseline comparisons
 
 ```powershell
+cd MOO_Framework
 python run_experiment_expert.py       # Expert baselines (EbM1/EbM2/EbM3)
 python run_experiment_geometric.py     # Geometric baselines (GcM1/GcM2)
 python run_baseline_comparison.py      # Unified comparison on common Sionna map
@@ -342,6 +350,7 @@ python run_baseline_comparison.py      # Unified comparison on common Sionna map
 ## 5.4 Generate figures
 
 ```powershell
+cd MOO_Framework
 python render_floor_bases.py                # Building floor plan bases
 python plot_registered_floor_heatmaps.py     # Per-floor registered heatmaps
 python plot_stacked_registered_heatmaps.py   # 3D stacked floor overviews
@@ -353,6 +362,8 @@ python plot_3d_metric_heatmaps.py            # Legacy 3D views
 ## 5.5 Run the six-LLM benchmark
 
 ```powershell
+cd MOO_Framework
+
 # Preview the task plan (no API calls)
 python send_task2.py --dry-run
 
@@ -372,6 +383,8 @@ pip install ifc2ply_xml
 # Convert IFC to PLY meshes + Sionna XML scene
 python -m ifc2xml_ply --inputs frame.ifc enclosure.ifc --frequency-ghz 3.5 --output ./output
 ```
+
+The standalone library is located in `ifc2xml_ply/`:
 
 ```
 ifc2xml_ply/
