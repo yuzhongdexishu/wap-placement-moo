@@ -1,17 +1,16 @@
 # Placement of Wireless Access Points for Smart Construction Using LLM-Driven Agents
 
-
 > **MOO (Modelling-Optimization-Operation) Framework**: Integrating BIM data, Sionna RT ray-tracing, genetic algorithm optimization, and LLM-driven dual-agent workflow automation for construction-stage-aware WAP placement
-
 
 ---
 
 # 1 Summary of supplemental materials
+
 This table below summarizes the key directories of this repository and the supplemental materials supporting the paper.
 
-![Frame Architecture](https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/MOO_Framework/data/visualization_bases/frame_architecture.png?raw=true)
-
-![Enclosure Architecture](https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/MOO_Framework/data/visualization_bases/enclosure_architecture.png?raw=true)
+| <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/MOO_Framework/data/visualization_bases/frame_architecture.png?raw=true" width="420" alt="Frame Architecture" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/MOO_Framework/data/visualization_bases/enclosure_architecture.png?raw=true" width="420" alt="Enclosure Architecture" /> |
+|:--:|:--:|
+| Frame stage architecture | Enclosure stage architecture |
 
 The supplemental materials (`Supplementary_Tables/`) include the following tables:
 
@@ -43,36 +42,28 @@ The data transformation from BIM's IFC format to Sionna RT-compatible PLY meshes
 
 This library includes **17 core functions** divided into three groups: **G-series** (geometry conversion, 7 functions), **P-series** (material property conversion, 3 functions), and **W-series** (wireless-propagation property conversion, 7 functions).
 
-![IFC2PLY&XML Function Library](https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/MOO_Framework/data/visualization_bases/frame_architecture.png?raw=true)
-
-↑↑↑ The IFC2PLY&XML function library released as an open-source Python package (`pip install ifc2ply_xml`)
+| <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/MOO_Framework/data/visualization_bases/frame_architecture.png?raw=true" width="420" alt="IFC2PLY&XML Library" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/MOO_Framework/data/visualization_bases/enclosure_architecture.png?raw=true" width="420" alt="Signal Coverage Model" /> |
+|:--:|:--:|
+| IFC2PLY&XML function library (`pip install ifc2ply_xml`) | Signal coverage models: frame stage (left) & enclosure stage (right) |
 
 The G-series functions convert IFC building elements (columns, beams, walls, doors, windows, slabs, roofs) into vertex-based PLY meshes. The P-series functions map IFC material attributes to XML entries. The W-series functions encode wireless-propagation properties including reflection loss, transmission loss, and diffraction loss parameters.
 
-![Enclosure Architecture](https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/MOO_Framework/data/visualization_bases/enclosure_architecture.png?raw=true)
-
-↑↑↑ Signal coverage models for the frame stage (left) and enclosure stage (right), constructed from IFC data via the IFC2PLY&XML library
-
 ### Floor-level visualization bases
 
-![Frame 1F](https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/MOO_Framework/data/visualization_bases/frame_1F_cutaway.png?raw=true)
-![Frame 2F](https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/MOO_Framework/data/visualization_bases/frame_2F_cutaway.png?raw=true)
-![Frame 3F](https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/MOO_Framework/data/visualization_bases/frame_3F_cutaway.png?raw=true)
+| <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/MOO_Framework/data/visualization_bases/frame_1F_cutaway.png?raw=true" width="280" alt="Frame 1F" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/MOO_Framework/data/visualization_bases/frame_2F_cutaway.png?raw=true" width="280" alt="Frame 2F" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/MOO_Framework/data/visualization_bases/frame_3F_cutaway.png?raw=true" width="280" alt="Frame 3F" /> |
+|:--:|:--:|:--:|
+| Frame — Floor 1 | Frame — Floor 2 | Frame — Floor 3 |
 
-↑↑↑ Frame stage — Floor 1, 2, 3 cutaway views
-
-![Enclosure 1F](https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/MOO_Framework/data/visualization_bases/enclosure_1F_cutaway.png?raw=true)
-![Enclosure 2F](https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/MOO_Framework/data/visualization_bases/enclosure_2F_cutaway.png?raw=true)
-![Enclosure 3F](https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/MOO_Framework/data/visualization_bases/enclosure_3F_cutaway.png?raw=true)
-
-↑↑↑ Enclosure stage — Floor 1, 2, 3 cutaway views
+| <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/MOO_Framework/data/visualization_bases/enclosure_1F_cutaway.png?raw=true" width="280" alt="Enclosure 1F" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/MOO_Framework/data/visualization_bases/enclosure_2F_cutaway.png?raw=true" width="280" alt="Enclosure 2F" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/MOO_Framework/data/visualization_bases/enclosure_3F_cutaway.png?raw=true" width="280" alt="Enclosure 3F" /> |
+|:--:|:--:|:--:|
+| Enclosure — Floor 1 | Enclosure — Floor 2 | Enclosure — Floor 3 |
 
 
 ## 3.2 Simulation-based WAP placement optimization
 
 The WAP placement optimization maximizes a weighted composite signal quality score of **RSRP**, **RSRQ**, and **SINR** across 600 formal receiver positions, using a **genetic algorithm (GA)** with real-valued chromosome encoding.
 
-The optimization model:
+**Optimization model:**
 
 | Component | Configuration |
 |-----------|--------------|
@@ -85,7 +76,7 @@ The optimization model:
 | Obstacle clearance | ≥ 0.05 m |
 | Thresholds | RSRP ≥ −140 dBm, RSRQ ≥ −19.5 dB, SINR ≥ 0 dB |
 
-The GA configuration:
+**GA configuration:**
 
 | Operator | Setting |
 |----------|---------|
@@ -97,7 +88,31 @@ The GA configuration:
 | Ray-tracing | Sionna RT RadioMapSolver, 1,000,000 samples/TX, 0.75 m cell size |
 | Propagation | LoS, specular reflection, diffraction, refraction enabled |
 
-The WAP count is determined iteratively from N = 1: progressively add WAPs and re-optimize locations until all 600 receivers satisfy the three RF thresholds simultaneously. The GA starts from multiple independently-found RF-feasible layouts to avoid premature convergence.
+The WAP count is determined iteratively from N = 1. The GA starts from multiple independently-found RF-feasible layouts.
+
+### PM heatmaps — Frame stage (RSRP per floor)
+
+| <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/registered_heatmaps/frame_PM_rsrp_1F_notext.png?raw=true" width="280" alt="Frame PM RSRP 1F" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/registered_heatmaps/frame_PM_rsrp_2F_notext.png?raw=true" width="280" alt="Frame PM RSRP 2F" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/registered_heatmaps/frame_PM_rsrp_3F_notext.png?raw=true" width="280" alt="Frame PM RSRP 3F" /> |
+|:--:|:--:|:--:|
+| Frame PM — RSRP 1F | Frame PM — RSRP 2F | Frame PM — RSRP 3F |
+
+### PM heatmaps — Enclosure stage (RSRP per floor)
+
+| <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/registered_heatmaps/enclosure_PM_rsrp_1F_notext.png?raw=true" width="280" alt="Enclosure PM RSRP 1F" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/registered_heatmaps/enclosure_PM_rsrp_2F_notext.png?raw=true" width="280" alt="Enclosure PM RSRP 2F" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/registered_heatmaps/enclosure_PM_rsrp_3F_notext.png?raw=true" width="280" alt="Enclosure PM RSRP 3F" /> |
+|:--:|:--:|:--:|
+| Enclosure PM — RSRP 1F | Enclosure PM — RSRP 2F | Enclosure PM — RSRP 3F |
+
+### PM 3D stacked overview — Frame stage
+
+| <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/stacked_registered_heatmaps/frame_PM_rsrp_stacked_notext.png?raw=true" width="280" alt="Frame PM RSRP stacked" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/stacked_registered_heatmaps/frame_PM_rsrq_stacked_notext.png?raw=true" width="280" alt="Frame PM RSRQ stacked" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/stacked_registered_heatmaps/frame_PM_sinr_stacked_notext.png?raw=true" width="280" alt="Frame PM SINR stacked" /> |
+|:--:|:--:|:--:|
+| Frame PM — RSRP | Frame PM — RSRQ | Frame PM — SINR |
+
+### PM 3D stacked overview — Enclosure stage
+
+| <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/stacked_registered_heatmaps/enclosure_PM_rsrp_stacked_notext.png?raw=true" width="280" alt="Enclosure PM RSRP stacked" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/stacked_registered_heatmaps/enclosure_PM_rsrq_stacked_notext.png?raw=true" width="280" alt="Enclosure PM RSRQ stacked" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/stacked_registered_heatmaps/enclosure_PM_sinr_stacked_notext.png?raw=true" width="280" alt="Enclosure PM SINR stacked" /> |
+|:--:|:--:|:--:|
+| Enclosure PM — RSRP | Enclosure PM — RSRQ | Enclosure PM — SINR |
 
 Below are the WAP placement optimization codes and baseline comparison codes:
 
@@ -156,8 +171,6 @@ Human Request
 └────────────┘ └────────────┘
 ```
 
-The 8 tools are organized into two MCP servers:
-
 **BIM-based Scene Modelling MCP Server** (`MOO_Framework/mcp_servers/bim_server.py`):
 | Tool | Function | Code |
 |------|----------|------|
@@ -174,16 +187,16 @@ The 8 tools are organized into two MCP servers:
 | 7. Generate Candidates | Generate and validate 150-site candidate dictionary | `MOO_Framework/tools/wap_layout_optimization/generate_candidates.py` |
 | 8. Optimize | Run GA optimization + evaluate 600-receiver results | `MOO_Framework/tools/wap_layout_optimization/optimize.py` |
 
-A **shared structured data record** maintains data continuity across the tool chain. Each tool reads required upstream data and appends its own outputs, preserving all previously generated information for subsequent tools.
+A **shared structured data record** maintains data continuity across the tool chain.
 
 ### Dual-Agent System
 
 The planning agent (`MOO_Framework/agents/planning_agent.py`) and execution agent (`MOO_Framework/agents/execution_agent.py`) follow a **plan-and-execute** pattern:
 
-1. **Planning Agent** — Receives the human task request, identifies required inputs/outputs, decomposes into an ordered preliminary plan
-2. **Execution Agent** — Validates the plan against available MCP tools, repairs missing arguments, produces final execution sequence, and invokes all 8 tools with **Thought–Action–Observation** logging
+1. **Planning Agent** — Receives the human task request, decomposes into an ordered preliminary plan
+2. **Execution Agent** — Validates the plan against available MCP tools, produces the final execution sequence, invokes all 8 tools with **Thought–Action–Observation** logging
 
-Each of the **six candidate LLMs** (Claude Opus 5, DeepSeek, Qwen, GPT-6, GPT-5.6 Sol, Grok 4.3) can drive both agents. Evaluation uses a common task matrix with **task completion rate** (all 8 MCP tool calls successful) as the metric.
+Each of the **six candidate LLMs** (Claude Opus 5, DeepSeek, Qwen, GPT-6, GPT-5.6 Sol, Grok 4.3) can drive both agents.
 
 ```
 MOO_Framework/agents/
@@ -208,25 +221,27 @@ MOO_Framework/mcp_servers/
 
 ### 3.4.1 SP3 / SC1 core experimental results
 
-The MOO framework uses DeepSeek, SP3 at 23 dBm, SC1 priority weight 2, 600 fixed receivers per stage, 150 candidate WAP sites, and Sionna RadioMapSolver at 0.75 m cell size with 1,000,000 samples per transmitter.
+The MOO framework uses DeepSeek, SP3 at 23 dBm, SC1 priority weight 2.
 
 | Stage | PM WAPs | PM F (optimization map) | PM F (common comparison map) | Best baseline F | PM failures / 600 | Min. count proven |
 |-------|---------|------------------------|------------------------------|-----------------|-------------------|-------------------|
 | Frame | 3 | 0.997597 | 0.997597 | 0.995065 (EbM1/EbM2) | 0 | Yes |
 | Enclosure | 12 | 0.987974 | 0.986763 | 0.784174 (EbM3) | 0 | Yes |
 
-All six methods use equal WAP counts per stage for fair comparison. Scores are computed on an identical Sionna RadioMapSolver comparison map.
-
 ### 3.4.2 Comparison with expert-based deployment methods
 
 | Method | Description | Frame F | Enclosure F | PM uplift (Frame) | PM uplift (Enclosure) |
 |--------|-------------|---------|-------------|-------------------|----------------------|
 | **PM** | Proposed Method (MOO) | **0.998** | **0.987** | — | — |
-| EbM1 | Huawei-inspired deployment | 0.995 | 0.673 | +0.3% | +46.6% |
-| EbM2 | Akuvox-inspired deployment | 0.995 | 0.679 | +0.3% | +45.4% |
-| EbM3 | Siemens-inspired deployment | 0.983 | 0.784 | +1.5% | +25.8% |
+| EbM1 | Huawei-inspired | 0.995 | 0.673 | +0.3% | +46.6% |
+| EbM2 | Akuvox-inspired | 0.995 | 0.679 | +0.3% | +45.4% |
+| EbM3 | Siemens-inspired | 0.983 | 0.784 | +1.5% | +25.8% |
 
-PM outperforms all three expert-based methods in both construction stages. The performance advantage is particularly significant in the enclosure stage where walls and partitions introduce substantial signal attenuation that expert-based rules-of-thumb cannot adequately account for.
+### Violin plots — Expert comparison
+
+| <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/violin/violin_expert_frame_notext.png?raw=true" width="420" alt="Expert Frame Violin" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/violin/violin_expert_enclosure_notext.png?raw=true" width="420" alt="Expert Enclosure Violin" /> |
+|:--:|:--:|
+| PM vs EbM1/EbM2/EbM3 — Frame stage | PM vs EbM1/EbM2/EbM3 — Enclosure stage |
 
 ### 3.4.3 Comparison with geometric coverage methods
 
@@ -236,11 +251,15 @@ PM outperforms all three expert-based methods in both construction stages. The p
 | GcM1 | Hexagonal coverage + GA | 0.860 | 0.674 | +16.0% | +46.3% |
 | GcM2 | Circular coverage + GA | 0.792 | 0.682 | +25.9% | +44.7% |
 
-PM substantially outperforms both geometric methods, demonstrating that idealized coverage shapes (hexagons, circles) fail to capture obstacle-dependent signal attenuation and complex multipath propagation in construction environments.
+### Violin plots — Geometric comparison
+
+| <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/violin/violin_geometric_frame_notext.png?raw=true" width="420" alt="Geometric Frame Violin" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/violin/violin_geometric_enclosure_notext.png?raw=true" width="420" alt="Geometric Enclosure Violin" /> |
+|:--:|:--:|
+| PM vs GcM1/GcM2 — Frame stage | PM vs GcM1/GcM2 — Enclosure stage |
 
 ### 3.4.4 Six-LLM agent task completion rates
 
-The six-LLM benchmark covers **480 formal tasks** (6 models × 2 stages × 5 sensor profiles × 8 scenarios per stage). Sensor profiles SP1–SP5 correspond to transmit powers of 13, 18, 23, 28, and 33 dBm at 3.5 GHz.
+The six-LLM benchmark covers **480 formal tasks** (6 models × 2 stages × 5 sensor profiles × 8 scenarios). SP1–SP5 = 13, 18, 23, 28, 33 dBm at 3.5 GHz.
 
 | Model | Family | Tasks completed | Tasks assigned | Completion rate |
 |-------|--------|----------------|----------------|-----------------|
@@ -252,50 +271,38 @@ The six-LLM benchmark covers **480 formal tasks** (6 models × 2 stages × 5 sen
 | Grok 4.3 | xAI | 74 | 80 | 92.5% |
 | **Total** | | **474** | **480** | **98.75%** |
 
-Of 480 assigned tasks, **474 succeeded**; six Grok-4.7 tasks failed at the LLM/API layer under the single-attempt policy. The success criterion requires: the LLM drives both planning and execution phases, all 8 MCP tool calls return success, and the overall task status indicates success.
-
-The full task matrix and per-task audit records are available in:
-- `MOO_Framework/result/six_llm/completion_rate.json` — Per-model completion rates
-- `MOO_Framework/result/six_llm/tasks/` — One JSON record per task (480 records)
-- `MOO_Framework/result/six_llm/completion_rate.csv` — Completion rate CSV
-- `Supplementary_Tables/Table_S5_Six_LLM_Run_Records.xlsx` — Detailed run records
+Audit records: `MOO_Framework/result/six_llm/completion_rate.json`, `MOO_Framework/result/six_llm/tasks/`, `Supplementary_Tables/Table_S5_Six_LLM_Run_Records.xlsx`.
 
 
 # 4 Discussion
 
 ## 4.1 Case of educational facility
 
-A primary school teaching building (37.45 m × 27.00 m × 13.50 m, plan area 1,011.15 m², three floors) is selected as the demonstrative case.
+A primary school teaching building (37.45 m × 27.00 m × 13.50 m, three floors, plan area 1,011.15 m²).
 
-The experimental design spans three dimensions:
-- **2 construction stages**: Structural frame stage, Wall-and-enclosure stage
-- **5 sensor profiles (SP1–SP5)**: 13, 18, 23, 28, 33 dBm at 3.5 GHz
-- **8 smart construction scenes per stage (SC1–SC8)**: Column/beam/slab inspection, layout marking, material delivery/stocktaking, waste sorting, safety monitoring (frame); Wall plastering, architectural inspection, material delivery/stocktaking, joint filling, floor surface operation, stair cleaning, waste sorting (enclosure)
+**3 experimental dimensions:** 2 construction stages (frame, enclosure) × 5 sensor profiles (SP1–SP5, 13–33 dBm) × 8 smart construction scenes per stage (SC1–SC8, e.g., column inspection, wall plastering, safety monitoring). Each scene has a 3D priority volume (weight 2×); remaining areas weight 1×.
 
-Each scene has a dedicated 3D priority volume (zones weighted 2× for signal quality), while all remaining areas are assigned weight 1×.
-
-The per-floor coordinate-registered heatmaps and violin plots comparing PM against all baselines are generated by:
+Generate figures:
 ```
-python MOO_Framework/plot_registered_floor_heatmaps.py   ← Per-floor RSRP/RSRQ/SINR heatmaps
-python MOO_Framework/plot_stacked_registered_heatmaps.py ← 3D stacked floor overviews
-python MOO_Framework/plot_group_violin.py               ← Per-receiver distribution violin plots
-python MOO_Framework/plot_uplift.py                     ← Composite score uplift bar charts
+cd MOO_Framework
+python plot_registered_floor_heatmaps.py   ← Per-floor RSRP/RSRQ/SINR heatmaps
+python plot_stacked_registered_heatmaps.py ← 3D stacked floor overviews
+python plot_group_violin.py               ← Per-receiver violin plots
+python plot_uplift.py                     ← Uplift bar charts
 ```
 
 ## 4.2 Transferability of the MOO framework
 
-The transferability of the MOO framework lies in its reusable modelling, optimization, and operation components:
-
-- **Modelling**: The IFC2PLY&XML function library processes selected BIM elements and converts exported IFC files into PLY/XML simulation scenes. Building geometry, material properties, and radio parameters are configurable per project.
-- **Optimization**: WAP parameters, receiver locations and weights, and signal coverage requirements can be reconfigured without code changes.
-- **Operation**: The agent pattern and tool-calling workflow remain unchanged across projects. Task instructions and tool inputs adapt to new buildings. Agent-compatible tools and MCP servers can be added or adjusted.
+- **Modelling**: IFC2PLY&XML library processes BIM elements; building geometry, materials, and radio parameters are configurable per project.
+- **Optimization**: WAP parameters, receiver locations/weights, and coverage requirements are reconfigurable.
+- **Operation**: Agent pattern and tool-calling workflow remain unchanged; tool inputs adapt to new buildings.
 
 ## 4.3 Method and result boundaries
 
-- The WAP count search and GA use **600 selected receiver positions** and **150 candidate WAP sites**. The minimum-count proof applies to this finite set.
-- Independent dense-domain probes can still fail (PM: 6/13,818 frame positions; 185/12,071 enclosure positions). The minimum-count claim does **not** prove all points in the continuous work domain satisfy thresholds.
-- The **global optimum** over all physical installation sites has not been proven; PM reports the highest observed F among the six-method comparison.
-- The formal six-LLM completion rate is based on successful eight-tool execution, not dense-domain validation.
+- The minimum-count proof applies to **600 selected receivers** and **150 candidate WAP sites**, not the continuous work domain.
+- Independent dense probes can fail (PM: 6/13,818 frame; 185/12,071 enclosure positions).
+- The **global optimum** over all physical sites has not been proven.
+- Six-LLM completion rate is based on successful 8-tool execution, not dense-domain validation.
 
 
 # 5 Quick start
@@ -303,116 +310,67 @@ The transferability of the MOO framework lies in its reusable modelling, optimiz
 ## 5.1 Environment setup
 
 ```powershell
-# Clone the repository
 git clone https://github.com/yuzhongdexishu/wap-placement-moo.git
 cd wap-placement-moo
-
-# Install dependencies (Python 3.11 required)
 python -m pip install -r MOO_Framework/requirements.txt
 
-# Configure credentials
 Copy-Item MOO_Framework/config/llm_config.example.json MOO_Framework/config/llm_config.json
 Copy-Item MOO_Framework/config/models.example.json MOO_Framework/config/models.json
 ```
+Edit config JSONs with your API keys (gitignored).
 
-Edit `MOO_Framework/config/llm_config.json` and `MOO_Framework/config/models.json` with your API credentials. The example files contain empty `api_key` fields. These files are in `.gitignore` and will never be committed.
-
-## 5.2 Run the MOO framework (Proposed Method)
+## 5.2 Run the MOO framework
 
 ```powershell
 cd MOO_Framework
-
-# Terminal 1: Start all four services
-python run_all.py
-# Starts: BIM MCP Server (:8101), WAP MCP Server (:8102),
-#         Planning Agent (:7001), Execution Agent (:7002)
-
-# Terminal 2: Submit the PM task
-python send_task_moo.py
-# Runs frame + enclosure stages, SP3 (23 dBm), SC1 priority scenario
+python run_all.py        # Terminal 1: BIM (:8101), WAP (:8102), Planning (:7001), Execution (:7002)
+python send_task_moo.py  # Terminal 2: frame + enclosure, SP3 (23 dBm), SC1
 ```
-
-Or launch services in background:
-```powershell
-cd MOO_Framework
-.\_launch_services2.ps1
-```
+Background launch: `.\_launch_services2.ps1`
 
 ## 5.3 Run baseline comparisons
 
 ```powershell
 cd MOO_Framework
-python run_experiment_expert.py       # Expert baselines (EbM1/EbM2/EbM3)
-python run_experiment_geometric.py     # Geometric baselines (GcM1/GcM2)
-python run_baseline_comparison.py      # Unified comparison on common Sionna map
+python run_experiment_expert.py    # EbM1/EbM2/EbM3
+python run_experiment_geometric.py  # GcM1/GcM2
+python run_baseline_comparison.py   # Unified comparison on common Sionna map
 ```
 
 ## 5.4 Generate figures
 
 ```powershell
 cd MOO_Framework
-python render_floor_bases.py                # Building floor plan bases
-python plot_registered_floor_heatmaps.py     # Per-floor registered heatmaps
-python plot_stacked_registered_heatmaps.py   # 3D stacked floor overviews
-python plot_group_violin.py                 # Per-receiver violin plots
-python plot_uplift.py                       # Uplift bar charts
-python plot_3d_metric_heatmaps.py            # Legacy 3D views
+python plot_registered_floor_heatmaps.py     # Per-floor heatmaps
+python plot_stacked_registered_heatmaps.py   # 3D stacked overviews
+python plot_group_violin.py                 # Violin plots
+python plot_uplift.py                       # Uplift bars
 ```
 
 ## 5.5 Run the six-LLM benchmark
 
 ```powershell
 cd MOO_Framework
-
-# Preview the task plan (no API calls)
-python send_task2.py --dry-run
-
-# Launch the full 480-task benchmark
-python send_task2.py
-
-# Export the task matrix
-python export_task_table.py
+python send_task2.py --dry-run   # Preview
+python send_task2.py             # Full 480 tasks
+python export_task_table.py      # Export task matrix
 ```
 
-## 5.6 Use the IFC2PLY&XML library standalone
+## 5.6 IFC2PLY&XML standalone library
 
 ```bash
-# Install from PyPI
 pip install ifc2ply_xml
-
-# Convert IFC to PLY meshes + Sionna XML scene
 python -m ifc2xml_ply --inputs frame.ifc enclosure.ifc --frequency-ghz 3.5 --output ./output
 ```
-
-The standalone library is located in `ifc2xml_ply/`:
 
 ```
 ifc2xml_ply/
 ├── main.py             ← CLI entry point
 ├── functions/
-│   ├── G1_ColumnGeometryTransform.py    ← G-series: geometry conversion (7 functions)
-│   ├── G2_BeamGeometryTransform.py
-│   ├── G3_WallGeometryTransform.py
-│   ├── G4_DoorGeometryTransform.py
-│   ├── G5_WindowGeometryTransform.py
-│   ├── G6_SlabGeometryTransform.py
-│   ├── G7_RoofGeometryTransform.py
-│   ├── P1_MaterialNameTransform.py      ← P-series: material properties (3 functions)
-│   ├── P2_MaterialThicknessTransform.py
-│   ├── P3_MaterialColorTransform.py
-│   ├── W1_FrequencyTransform.py         ← W-series: wireless propagation (7 functions)
-│   ├── W2_RelativePermittivityTransform.py
-│   ├── W3_RelativePermeabilityTransform.py
-│   ├── W4_ConductivityTransform.py
-│   ├── W5_ReflectionLossTransform.py
-│   ├── W6_TransmissionLossTransform.py
-│   └── W7_DiffractionLossTransform.py
-└── data/
-    ├── frame.ifc
-    ├── enclosure.ifc
-    ├── material_class_map.csv
-    ├── itu_p2040_4_coefficients.csv
-    └── expert_radio_parameters.csv
+│   ├── G1–G7           ← Geometry conversion (7 functions)
+│   ├── P1–P3           ← Material property conversion (3 functions)
+│   └── W1–W7           ← Wireless propagation conversion (7 functions)
+└── data/               ← Material library & IFC samples
 ```
 
-↑↑↑ Standalone open-source IFC2PLY&XML function library (also available on PyPI)
+↑↑↑ Open-source IFC2PLY&XML function library (also available on PyPI)
