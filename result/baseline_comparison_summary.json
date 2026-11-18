@@ -1,0 +1,491 @@
+{
+  "cases": [
+    {
+      "stage": "frame",
+      "method": "EbM1",
+      "wap_count": 3,
+      "sensor_profile": "SP3",
+      "tx_power_dbm": 23.0,
+      "region_sha256": "4c7ab4619490cfea85efff6f97632a60975fe527be22f9df2c692585e2a25c3f",
+      "same_receiver_set_as_pm": true,
+      "surrogate_site_projection": false,
+      "surrogate_file": "D:\\a\\WAP_PROJECT_V17_modified\\WAP_PROJECT_V17\\WAP_PROJECT_V17\\result\\frame\\process\\baselines\\baseline_surrogate.npz",
+      "site_projection_mean_m": 0.0,
+      "site_projection_max_m": 0.0,
+      "source_layout": {
+        "generator": "expert_layouts",
+        "description": "Manufacturer-inspired corridor-centred heuristic prioritizing longitudinal circulation, major entrances, building edges, and the SC1 priority construction scenario (F-SC1 / E-SC1). It is a reproducible research heuristic and is not an official Huawei design.",
+        "random_seed": 20260719,
+        "layout_metadata": {
+          "method": "EbM1",
+          "method_description": "Manufacturer-inspired corridor-centred heuristic prioritizing longitudinal circulation, major entrances, building edges, and the SC1 priority construction scenario (F-SC1 / E-SC1). It is a reproducible research heuristic and is not an official Huawei design.",
+          "rule_version": "1.0",
+          "manufacturer_inspired_not_official_design": true,
+          "requested_wap_count": 3,
+          "minimum_wap_distance_m": 4.0,
+          "candidate_count": 25,
+          "rejected_invalid_candidate_count": 0,
+          "rejected_minimum_distance_count": 0,
+          "repair_event_count": 0,
+          "constraint_audit": {
+            "valid": true,
+            "invalid_wap_indices": [],
+            "minimum_distance_violations": [],
+            "z_min_m": 1.3,
+            "z_max_m": 9.5,
+            "distinct_z_levels_0_1m": 3,
+            "floor_wap_counts": {},
+            "missing_required_floors": []
+          },
+          "random_seed": 20260719
+        }
+      },
+      "mean_composite_score": 0.9950654685688557,
+      "coverage": {
+        "receivers": 600,
+        "no_link": 0,
+        "failed_quality": 0
+      },
+      "feasible_on_600": true,
+      "dense_probe_count": 13818,
+      "dense_failed_count": 2
+    },
+    {
+      "stage": "frame",
+      "method": "EbM2",
+      "wap_count": 3,
+      "sensor_profile": "SP3",
+      "tx_power_dbm": 23.0,
+      "region_sha256": "4c7ab4619490cfea85efff6f97632a60975fe527be22f9df2c692585e2a25c3f",
+      "same_receiver_set_as_pm": true,
+      "surrogate_site_projection": false,
+      "surrogate_file": "D:\\a\\WAP_PROJECT_V17_modified\\WAP_PROJECT_V17\\WAP_PROJECT_V17\\result\\frame\\process\\baselines\\baseline_surrogate.npz",
+      "site_projection_mean_m": 0.0,
+      "site_projection_max_m": 0.0,
+      "source_layout": {
+        "generator": "expert_layouts",
+        "description": "Manufacturer-inspired room-entry and corridor-intersection heuristic prioritizing scene approaches, circulation junctions, and the SC1 priority construction scenario (F-SC1 / E-SC1). It is a reproducible research heuristic and is not an official Akuvox design.",
+        "random_seed": 20260720,
+        "layout_metadata": {
+          "method": "EbM2",
+          "method_description": "Manufacturer-inspired room-entry and corridor-intersection heuristic prioritizing scene approaches, circulation junctions, and the SC1 priority construction scenario (F-SC1 / E-SC1). It is a reproducible research heuristic and is not an official Akuvox design.",
+          "rule_version": "1.0",
+          "manufacturer_inspired_not_official_design": true,
+          "requested_wap_count": 3,
+          "minimum_wap_distance_m": 4.0,
+          "candidate_count": 33,
+          "rejected_invalid_candidate_count": 2,
+          "rejected_minimum_distance_count": 0,
+          "repair_event_count": 0,
+          "constraint_audit": {
+            "valid": true,
+            "invalid_wap_indices": [],
+            "minimum_distance_violations": [],
+            "z_min_m": 1.3,
+            "z_max_m": 9.5,
+            "distinct_z_levels_0_1m": 3,
+            "floor_wap_counts": {},
+            "missing_required_floors": []
+          },
+          "random_seed": 20260720
+        }
+      },
+      "mean_composite_score": 0.9950654685688557,
+      "coverage": {
+        "receivers": 600,
+        "no_link": 0,
+        "failed_quality": 0
+      },
+      "feasible_on_600": true,
+      "dense_probe_count": 13818,
+      "dense_failed_count": 2
+    },
+    {
+      "stage": "frame",
+      "method": "EbM3",
+      "wap_count": 3,
+      "sensor_profile": "SP3",
+      "tx_power_dbm": 23.0,
+      "region_sha256": "4c7ab4619490cfea85efff6f97632a60975fe527be22f9df2c692585e2a25c3f",
+      "same_receiver_set_as_pm": true,
+      "surrogate_site_projection": false,
+      "surrogate_file": "D:\\a\\WAP_PROJECT_V17_modified\\WAP_PROJECT_V17\\WAP_PROJECT_V17\\result\\frame\\process\\baselines\\baseline_surrogate.npz",
+      "site_projection_mean_m": 0.0,
+      "site_projection_max_m": 0.0,
+      "source_layout": {
+        "generator": "expert_layouts",
+        "description": "Manufacturer-inspired zonal grid and vertical-traffic heuristic using balanced spatial cells, multiple elevation bands, and vertical circulation anchors. It is a reproducible research heuristic and is not an official Siemens design.",
+        "random_seed": 20260721,
+        "layout_metadata": {
+          "method": "EbM3",
+          "method_description": "Manufacturer-inspired zonal grid and vertical-traffic heuristic using balanced spatial cells, multiple elevation bands, and vertical circulation anchors. It is a reproducible research heuristic and is not an official Siemens design.",
+          "rule_version": "1.0",
+          "manufacturer_inspired_not_official_design": true,
+          "requested_wap_count": 3,
+          "minimum_wap_distance_m": 4.0,
+          "candidate_count": 21,
+          "rejected_invalid_candidate_count": 0,
+          "rejected_minimum_distance_count": 0,
+          "repair_event_count": 0,
+          "constraint_audit": {
+            "valid": true,
+            "invalid_wap_indices": [],
+            "minimum_distance_violations": [],
+            "z_min_m": 1.3,
+            "z_max_m": 9.5,
+            "distinct_z_levels_0_1m": 3,
+            "floor_wap_counts": {},
+            "missing_required_floors": []
+          },
+          "random_seed": 20260721
+        }
+      },
+      "mean_composite_score": 0.9832655229690735,
+      "coverage": {
+        "receivers": 600,
+        "no_link": 0,
+        "failed_quality": 1
+      },
+      "feasible_on_600": false,
+      "dense_probe_count": 13818,
+      "dense_failed_count": 57
+    },
+    {
+      "stage": "frame",
+      "method": "GcM1",
+      "wap_count": 3,
+      "sensor_profile": "SP3",
+      "tx_power_dbm": 23.0,
+      "region_sha256": "4c7ab4619490cfea85efff6f97632a60975fe527be22f9df2c692585e2a25c3f",
+      "same_receiver_set_as_pm": true,
+      "surrogate_site_projection": false,
+      "surrogate_file": "D:\\a\\WAP_PROJECT_V17_modified\\WAP_PROJECT_V17\\WAP_PROJECT_V17\\result\\frame\\process\\baselines\\baseline_surrogate.npz",
+      "site_projection_mean_m": 0.0,
+      "site_projection_max_m": 0.0,
+      "source_layout": {
+        "generator": "geometric_layouts",
+        "description": "Each WAP service region is represented by a regular hexagon. The GA maximizes the union of weighted geometric coverage areas over five horizontal height layers.",
+        "random_seed": 20260728,
+        "geometric_fitness": 0.6,
+        "constraint_audit": {
+          "valid": true,
+          "invalid_wap_indices": [],
+          "minimum_distance_violations": [],
+          "z_min_m": 0.08,
+          "z_max_m": 5.4,
+          "distinct_z_levels_0_1m": 3,
+          "floor_wap_counts": {},
+          "missing_required_floors": []
+        }
+      },
+      "mean_composite_score": 0.8600488710777019,
+      "coverage": {
+        "receivers": 600,
+        "no_link": 28,
+        "failed_quality": 34
+      },
+      "feasible_on_600": false,
+      "dense_probe_count": 13818,
+      "dense_failed_count": 829
+    },
+    {
+      "stage": "frame",
+      "method": "GcM2",
+      "wap_count": 3,
+      "sensor_profile": "SP3",
+      "tx_power_dbm": 23.0,
+      "region_sha256": "4c7ab4619490cfea85efff6f97632a60975fe527be22f9df2c692585e2a25c3f",
+      "same_receiver_set_as_pm": true,
+      "surrogate_site_projection": false,
+      "surrogate_file": "D:\\a\\WAP_PROJECT_V17_modified\\WAP_PROJECT_V17\\WAP_PROJECT_V17\\result\\frame\\process\\baselines\\baseline_surrogate.npz",
+      "site_projection_mean_m": 0.0,
+      "site_projection_max_m": 0.0,
+      "source_layout": {
+        "generator": "geometric_layouts",
+        "description": "Each WAP service region is represented by a circle. The GA maximizes the union of weighted geometric coverage areas over five horizontal height layers.",
+        "random_seed": 20260738,
+        "geometric_fitness": 0.6,
+        "constraint_audit": {
+          "valid": true,
+          "invalid_wap_indices": [],
+          "minimum_distance_violations": [],
+          "z_min_m": 0.08,
+          "z_max_m": 5.4,
+          "distinct_z_levels_0_1m": 3,
+          "floor_wap_counts": {},
+          "missing_required_floors": []
+        }
+      },
+      "mean_composite_score": 0.7922826830347287,
+      "coverage": {
+        "receivers": 600,
+        "no_link": 53,
+        "failed_quality": 67
+      },
+      "feasible_on_600": false,
+      "dense_probe_count": 13818,
+      "dense_failed_count": 1680
+    },
+    {
+      "stage": "enclosure",
+      "method": "EbM1",
+      "wap_count": 12,
+      "sensor_profile": "SP3",
+      "tx_power_dbm": 23.0,
+      "region_sha256": "4c7ab4619490cfea85efff6f97632a60975fe527be22f9df2c692585e2a25c3f",
+      "same_receiver_set_as_pm": true,
+      "surrogate_site_projection": false,
+      "surrogate_file": "D:\\a\\WAP_PROJECT_V17_modified\\WAP_PROJECT_V17\\WAP_PROJECT_V17\\result\\enclosure\\process\\baselines\\baseline_surrogate.npz",
+      "site_projection_mean_m": 0.0,
+      "site_projection_max_m": 0.0,
+      "source_layout": {
+        "generator": "expert_layouts",
+        "description": "Manufacturer-inspired corridor-centred heuristic prioritizing longitudinal circulation, major entrances, building edges, and the SC1 priority construction scenario (F-SC1 / E-SC1). It is a reproducible research heuristic and is not an official Huawei design.",
+        "random_seed": 20260819,
+        "layout_metadata": {
+          "method": "EbM1",
+          "method_description": "Manufacturer-inspired corridor-centred heuristic prioritizing longitudinal circulation, major entrances, building edges, and the SC1 priority construction scenario (F-SC1 / E-SC1). It is a reproducible research heuristic and is not an official Huawei design.",
+          "rule_version": "1.0",
+          "manufacturer_inspired_not_official_design": true,
+          "requested_wap_count": 12,
+          "minimum_wap_distance_m": 4.0,
+          "candidate_count": 25,
+          "rejected_invalid_candidate_count": 2,
+          "rejected_minimum_distance_count": 6,
+          "repair_event_count": 0,
+          "constraint_audit": {
+            "valid": true,
+            "invalid_wap_indices": [],
+            "minimum_distance_violations": [],
+            "z_min_m": 0.841284,
+            "z_max_m": 10.406422,
+            "distinct_z_levels_0_1m": 3,
+            "floor_wap_counts": {},
+            "missing_required_floors": []
+          },
+          "random_seed": 20260819
+        }
+      },
+      "mean_composite_score": 0.6729949335262116,
+      "coverage": {
+        "receivers": 600,
+        "no_link": 100,
+        "failed_quality": 159
+      },
+      "feasible_on_600": false,
+      "dense_probe_count": 12071,
+      "dense_failed_count": 3129
+    },
+    {
+      "stage": "enclosure",
+      "method": "EbM2",
+      "wap_count": 12,
+      "sensor_profile": "SP3",
+      "tx_power_dbm": 23.0,
+      "region_sha256": "4c7ab4619490cfea85efff6f97632a60975fe527be22f9df2c692585e2a25c3f",
+      "same_receiver_set_as_pm": true,
+      "surrogate_site_projection": false,
+      "surrogate_file": "D:\\a\\WAP_PROJECT_V17_modified\\WAP_PROJECT_V17\\WAP_PROJECT_V17\\result\\enclosure\\process\\baselines\\baseline_surrogate.npz",
+      "site_projection_mean_m": 0.0,
+      "site_projection_max_m": 0.0,
+      "source_layout": {
+        "generator": "expert_layouts",
+        "description": "Manufacturer-inspired room-entry and corridor-intersection heuristic prioritizing scene approaches, circulation junctions, and the SC1 priority construction scenario (F-SC1 / E-SC1). It is a reproducible research heuristic and is not an official Akuvox design.",
+        "random_seed": 20260820,
+        "layout_metadata": {
+          "method": "EbM2",
+          "method_description": "Manufacturer-inspired room-entry and corridor-intersection heuristic prioritizing scene approaches, circulation junctions, and the SC1 priority construction scenario (F-SC1 / E-SC1). It is a reproducible research heuristic and is not an official Akuvox design.",
+          "rule_version": "1.0",
+          "manufacturer_inspired_not_official_design": true,
+          "requested_wap_count": 12,
+          "minimum_wap_distance_m": 4.0,
+          "candidate_count": 33,
+          "rejected_invalid_candidate_count": 8,
+          "rejected_minimum_distance_count": 14,
+          "repair_event_count": 0,
+          "constraint_audit": {
+            "valid": true,
+            "invalid_wap_indices": [],
+            "minimum_distance_violations": [],
+            "z_min_m": 0.841284,
+            "z_max_m": 10.406422,
+            "distinct_z_levels_0_1m": 4,
+            "floor_wap_counts": {},
+            "missing_required_floors": []
+          },
+          "random_seed": 20260820
+        }
+      },
+      "mean_composite_score": 0.6785646815337392,
+      "coverage": {
+        "receivers": 600,
+        "no_link": 118,
+        "failed_quality": 130
+      },
+      "feasible_on_600": false,
+      "dense_probe_count": 12071,
+      "dense_failed_count": 2434
+    },
+    {
+      "stage": "enclosure",
+      "method": "EbM3",
+      "wap_count": 12,
+      "sensor_profile": "SP3",
+      "tx_power_dbm": 23.0,
+      "region_sha256": "4c7ab4619490cfea85efff6f97632a60975fe527be22f9df2c692585e2a25c3f",
+      "same_receiver_set_as_pm": true,
+      "surrogate_site_projection": false,
+      "surrogate_file": "D:\\a\\WAP_PROJECT_V17_modified\\WAP_PROJECT_V17\\WAP_PROJECT_V17\\result\\enclosure\\process\\baselines\\baseline_surrogate.npz",
+      "site_projection_mean_m": 0.0,
+      "site_projection_max_m": 0.0,
+      "source_layout": {
+        "generator": "expert_layouts",
+        "description": "Manufacturer-inspired zonal grid and vertical-traffic heuristic using balanced spatial cells, multiple elevation bands, and vertical circulation anchors. It is a reproducible research heuristic and is not an official Siemens design.",
+        "random_seed": 20260821,
+        "layout_metadata": {
+          "method": "EbM3",
+          "method_description": "Manufacturer-inspired zonal grid and vertical-traffic heuristic using balanced spatial cells, multiple elevation bands, and vertical circulation anchors. It is a reproducible research heuristic and is not an official Siemens design.",
+          "rule_version": "1.0",
+          "manufacturer_inspired_not_official_design": true,
+          "requested_wap_count": 12,
+          "minimum_wap_distance_m": 4.0,
+          "candidate_count": 21,
+          "rejected_invalid_candidate_count": 7,
+          "rejected_minimum_distance_count": 0,
+          "repair_event_count": 0,
+          "constraint_audit": {
+            "valid": true,
+            "invalid_wap_indices": [],
+            "minimum_distance_violations": [],
+            "z_min_m": 0.841284,
+            "z_max_m": 10.406422,
+            "distinct_z_levels_0_1m": 3,
+            "floor_wap_counts": {},
+            "missing_required_floors": []
+          },
+          "random_seed": 20260821
+        }
+      },
+      "mean_composite_score": 0.7841737313671509,
+      "coverage": {
+        "receivers": 600,
+        "no_link": 69,
+        "failed_quality": 103
+      },
+      "feasible_on_600": false,
+      "dense_probe_count": 12071,
+      "dense_failed_count": 2138
+    },
+    {
+      "stage": "enclosure",
+      "method": "GcM1",
+      "wap_count": 12,
+      "sensor_profile": "SP3",
+      "tx_power_dbm": 23.0,
+      "region_sha256": "4c7ab4619490cfea85efff6f97632a60975fe527be22f9df2c692585e2a25c3f",
+      "same_receiver_set_as_pm": true,
+      "surrogate_site_projection": false,
+      "surrogate_file": "D:\\a\\WAP_PROJECT_V17_modified\\WAP_PROJECT_V17\\WAP_PROJECT_V17\\result\\enclosure\\process\\baselines\\baseline_surrogate.npz",
+      "site_projection_mean_m": 0.0,
+      "site_projection_max_m": 0.0,
+      "source_layout": {
+        "generator": "geometric_layouts",
+        "description": "Each WAP service region is represented by a regular hexagon. The GA maximizes the union of weighted geometric coverage areas over five horizontal height layers.",
+        "random_seed": 20260828,
+        "geometric_fitness": 1.0,
+        "constraint_audit": {
+          "valid": true,
+          "invalid_wap_indices": [],
+          "minimum_distance_violations": [],
+          "z_min_m": -0.515229,
+          "z_max_m": 11.762936,
+          "distinct_z_levels_0_1m": 5,
+          "floor_wap_counts": {},
+          "missing_required_floors": []
+        }
+      },
+      "mean_composite_score": 0.6744995227922531,
+      "coverage": {
+        "receivers": 600,
+        "no_link": 143,
+        "failed_quality": 162
+      },
+      "feasible_on_600": false,
+      "dense_probe_count": 12071,
+      "dense_failed_count": 3313
+    },
+    {
+      "stage": "enclosure",
+      "method": "GcM2",
+      "wap_count": 12,
+      "sensor_profile": "SP3",
+      "tx_power_dbm": 23.0,
+      "region_sha256": "4c7ab4619490cfea85efff6f97632a60975fe527be22f9df2c692585e2a25c3f",
+      "same_receiver_set_as_pm": true,
+      "surrogate_site_projection": false,
+      "surrogate_file": "D:\\a\\WAP_PROJECT_V17_modified\\WAP_PROJECT_V17\\WAP_PROJECT_V17\\result\\enclosure\\process\\baselines\\baseline_surrogate.npz",
+      "site_projection_mean_m": 0.0,
+      "site_projection_max_m": 0.0,
+      "source_layout": {
+        "generator": "geometric_layouts",
+        "description": "Each WAP service region is represented by a circle. The GA maximizes the union of weighted geometric coverage areas over five horizontal height layers.",
+        "random_seed": 20260838,
+        "geometric_fitness": 1.0,
+        "constraint_audit": {
+          "valid": true,
+          "invalid_wap_indices": [],
+          "minimum_distance_violations": [],
+          "z_min_m": -0.515229,
+          "z_max_m": 11.762936,
+          "distinct_z_levels_0_1m": 5,
+          "floor_wap_counts": {},
+          "missing_required_floors": []
+        }
+      },
+      "mean_composite_score": 0.6819360584667548,
+      "coverage": {
+        "receivers": 600,
+        "no_link": 153,
+        "failed_quality": 166
+      },
+      "feasible_on_600": false,
+      "dense_probe_count": 12071,
+      "dense_failed_count": 3646
+    }
+  ],
+  "method": "PM and original baseline sites evaluated by one Sionna RadioMapSolver per stage",
+  "pm_joint": {
+    "frame": {
+      "stage": "frame",
+      "method": "PM",
+      "wap_count": 3,
+      "mean_composite_score": 0.9975968055704701,
+      "source": "Sionna RadioMapSolver surrogate",
+      "surrogate_file": "D:\\a\\WAP_PROJECT_V17_modified\\WAP_PROJECT_V17\\WAP_PROJECT_V17\\result\\frame\\process\\baselines\\baseline_surrogate.npz",
+      "sensor_profile": "SP3",
+      "tx_power_dbm": 23.0,
+      "region_sha256": "4c7ab4619490cfea85efff6f97632a60975fe527be22f9df2c692585e2a25c3f",
+      "coverage": {
+        "receivers": 600,
+        "no_link": 0,
+        "failed_quality": 0
+      }
+    },
+    "enclosure": {
+      "stage": "enclosure",
+      "method": "PM",
+      "wap_count": 12,
+      "mean_composite_score": 0.9867630843463076,
+      "source": "Sionna RadioMapSolver surrogate",
+      "surrogate_file": "D:\\a\\WAP_PROJECT_V17_modified\\WAP_PROJECT_V17\\WAP_PROJECT_V17\\result\\enclosure\\process\\baselines\\baseline_surrogate.npz",
+      "sensor_profile": "SP3",
+      "tx_power_dbm": 23.0,
+      "region_sha256": "4c7ab4619490cfea85efff6f97632a60975fe527be22f9df2c692585e2a25c3f",
+      "coverage": {
+        "receivers": 600,
+        "no_link": 0,
+        "failed_quality": 0
+      }
+    }
+  }
+}

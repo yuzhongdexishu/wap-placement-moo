@@ -1,0 +1,7 @@
+﻿model_key,model_display_name,completion_rate_percent,assigned_tasks,attempted_tasks,failure_categories,dense_validation
+claude_opus5,Claude Opus-5,100.0,80,80,{},"{'failed': 64, 'passed': 16}"
+deepseek,DeepSeek-V4-Pro,100.0,80,80,{},"{'failed': 64, 'passed': 16}"
+qianwen,Qwen-3.8 Max,100.0,80,80,{},"{'failed': 64, 'passed': 16}"
+gpt6,GPT-6-Astra,100.0,80,80,{},"{'failed': 64, 'passed': 16}"
+gpt56_sol,GPT-5.6-SOL,100.0,80,80,{},"{'failed': 64, 'passed': 16}"
+grok43,Grok-4.7,92.5,80,80,{'llm_or_api': 6},"{'failed': 59, 'passed': 15}"

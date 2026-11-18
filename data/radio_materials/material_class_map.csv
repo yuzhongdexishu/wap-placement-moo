@@ -1,0 +1,18 @@
+﻿ifc_file,material_step_id,material_name,material_class,mapping_status,rationale
+frame.ifc,81,混凝土 - 现场浇注混凝土,concrete,direct_class,Explicit concrete name
+frame.ifc,1307,<Unnamed>,concrete,scenario_assumption,Material name is <Unnamed>; associated mainly with IFC columns. Assume concrete only for baseline simulation; physical identity must be confirmed.
+frame.ifc,2081,水泥砂浆,concrete,class_level_proxy,"Cement mortar is a cementitious material. Concrete coefficient used only as an approximate electromagnetic proxy, not a measured mortar value."
+frame.ifc,2194,面砖,brick,class_level_proxy,Facing tile is treated as a fired-ceramic-like proxy to brick for baseline simulation; tile composition must be confirmed.
+frame.ifc,2202,砌体-普通砖 75x225mm,brick,direct_class,Explicit fired-brick name
+enclosure.ifc,81,混凝土 - 现场浇注混凝土,concrete,direct_class,Explicit concrete name
+enclosure.ifc,1371,教学楼内墙面,plasterboard,scenario_assumption,Interior wall finish has no material composition; assume gypsum/plasterboard-like surface solely for baseline simulation. Confirm actual finish.
+enclosure.ifc,3832,<Unnamed>,metal,scenario_assumption,Material name is <Unnamed>; IFC associations are predominantly railing components. Assume metal baseline; one linked column requires verification.
+enclosure.ifc,3867,教学楼外墙面,concrete,scenario_assumption,Exterior wall finish is not a substance name; assume cementitious render/concrete-like surface as a baseline only. Confirm finish composition.
+enclosure.ifc,3872,混凝土砌块,concrete,class_level_proxy,Concrete block approximated by bulk concrete class; validate porosity
+enclosure.ifc,8370,玻璃,glass,direct_class,Explicit glass name
+enclosure.ifc,8851,金属-铝-白色,metal,class_level_proxy,Metal class model; not alloy-specific measurement
+enclosure.ifc,34422,金属-钢-深灰色,metal,class_level_proxy,Metal class model; not alloy-specific measurement
+enclosure.ifc,36262,金属 - 铝-白色,metal,class_level_proxy,Metal class model; not alloy-specific measurement
+enclosure.ifc,41699,水泥砂浆,concrete,class_level_proxy,Cement mortar is approximated by bulk concrete coefficients; not a mortar-specific measurement.
+enclosure.ifc,41810,面砖,brick,class_level_proxy,Facing tile treated as brick-class fired-ceramic proxy; verify tile composition and glazing.
+enclosure.ifc,41818,砌体-普通砖 75x225mm,brick,direct_class,Explicit fired-brick name

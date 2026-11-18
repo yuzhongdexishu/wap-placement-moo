@@ -1,0 +1,55 @@
+# Local credentials and machine-specific configuration
+/config/models.json
+/config/llm_config.json
+.env
+.env.*
+*.pem
+*.key
+*.p12
+
+# Python and local tooling
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Generated radio maps, logs, images, and archived runs
+/result/*
+!/result/comparison_table.csv
+!/result/baseline_comparison_summary.json
+!/result/six_llm/
+/result/six_llm/*
+!/result/six_llm/tasks/
+!/result/six_llm/active_scope.json
+!/result/six_llm/completion_rate.json
+!/result/six_llm/completion_rate.csv
+!/result/six_llm/task_manifest_full480.csv
+/plots/
+/manuscript_qa/
+
+# Manuscript and office working files; kept locally
+/Supplement_Final_English/
+/Manuscript*.docx
+/Manuscript*.pdf
+/Manuscript*.json
+/*.wbk
+**/*.wbk
+~$*
+/*.xlsx
+
+# One-off manuscript audit and editing helpers
+/add_fig_table_refs.py
+/audit_citation_contexts.py
+/audit_manuscript_refs.py
+/build_supplement_s5.py
+/fix_manuscript*.py
+/redraw_manuscript_workflows.py
+/replace_manuscript_figures.py
+/revise_manuscript1116.py
+/ch3_6_*.txt
+/full_*.txt
+/manuscript_text.txt
+/revised_full.txt

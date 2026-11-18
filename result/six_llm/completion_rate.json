@@ -1,0 +1,81 @@
+{
+  "metric": "task_completion_rate_percent",
+  "definition": "successful formal tasks / assigned tasks in the active scope; dense-domain validation is reported separately",
+  "scope_task_count": 480,
+  "models": [
+    {
+      "model_key": "claude_opus5",
+      "model_display_name": "Claude Opus-5",
+      "completion_rate_percent": 100.0,
+      "assigned_tasks": 80,
+      "attempted_tasks": 80,
+      "failure_categories": {},
+      "dense_validation": {
+        "failed": 64,
+        "passed": 16
+      }
+    },
+    {
+      "model_key": "deepseek",
+      "model_display_name": "DeepSeek-V4-Pro",
+      "completion_rate_percent": 100.0,
+      "assigned_tasks": 80,
+      "attempted_tasks": 80,
+      "failure_categories": {},
+      "dense_validation": {
+        "failed": 64,
+        "passed": 16
+      }
+    },
+    {
+      "model_key": "qianwen",
+      "model_display_name": "Qwen-3.8 Max",
+      "completion_rate_percent": 100.0,
+      "assigned_tasks": 80,
+      "attempted_tasks": 80,
+      "failure_categories": {},
+      "dense_validation": {
+        "failed": 64,
+        "passed": 16
+      }
+    },
+    {
+      "model_key": "gpt6",
+      "model_display_name": "GPT-6-Astra",
+      "completion_rate_percent": 100.0,
+      "assigned_tasks": 80,
+      "attempted_tasks": 80,
+      "failure_categories": {},
+      "dense_validation": {
+        "failed": 64,
+        "passed": 16
+      }
+    },
+    {
+      "model_key": "gpt56_sol",
+      "model_display_name": "GPT-5.6-SOL",
+      "completion_rate_percent": 100.0,
+      "assigned_tasks": 80,
+      "attempted_tasks": 80,
+      "failure_categories": {},
+      "dense_validation": {
+        "failed": 64,
+        "passed": 16
+      }
+    },
+    {
+      "model_key": "grok43",
+      "model_display_name": "Grok-4.7",
+      "completion_rate_percent": 92.5,
+      "assigned_tasks": 80,
+      "attempted_tasks": 80,
+      "failure_categories": {
+        "llm_or_api": 6
+      },
+      "dense_validation": {
+        "failed": 59,
+        "passed": 15
+      }
+    }
+  ]
+}

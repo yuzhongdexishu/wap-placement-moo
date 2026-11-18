@@ -1,0 +1,8 @@
+{
+  "provider": "deepseek",
+  "model": "deepseek-reasoner",
+  "base_url": "https://api.deepseek.com",
+  "api_key_env": "DEEPSEEK_API_KEY",
+  "api_key": "",
+  "note": "Environment variable takes precedence. Keep api_key empty when sharing paper code."
+}

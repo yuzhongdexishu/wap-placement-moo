@@ -1,0 +1,7 @@
+ifc_file,material_step_id,material_name,frequency_ghz,relative_permittivity,relative_permeability,conductivity_s_m,thickness_m,scattering_coefficient,xpd_coefficient,source,reference
+frame.ifc,1307,<Unnamed>,,,,,0.2,,,baseline_simulation_assumption_not_expert,"Concrete-like column material assumed, effective slab thickness only; no measurement supplied; verify before physical inference."
+enclosure.ifc,3832,<Unnamed>,,,,,0.003,,,baseline_simulation_assumption_not_expert,"Metal-like railing material assumed, effective metal sheet thickness only; no measurement supplied; verify before physical inference."
+enclosure.ifc,8370,玻璃,,,,,0.006,,,baseline_simulation_assumption_not_expert,"Single glass pane baseline assumption, actual glazing may differ; no measurement supplied; verify before physical inference."
+enclosure.ifc,8851,金属-铝-白色,,,,,0.003,,,baseline_simulation_assumption_not_expert,Aluminium-like sheet/metal effective thickness baseline only; no measurement supplied; verify before physical inference.
+enclosure.ifc,34422,金属-钢-深灰色,,,,,0.003,,,baseline_simulation_assumption_not_expert,Steel-like metal sheet effective thickness baseline only; no measurement supplied; verify before physical inference.
+enclosure.ifc,36262,金属 - 铝-白色,,,,,0.003,,,baseline_simulation_assumption_not_expert,Aluminium-like sheet/metal effective thickness baseline only; no measurement supplied; verify before physical inference.

@@ -1,0 +1,13 @@
+﻿stage,method,wap_count,mean_composite_score,failed_600,no_link_600,feasible_on_600,sensor_profile,samples_per_tx,surrogate_file
+frame,PM,3,0.9975968055704701,0,0,True,SP3,1000000,D:\a\WAP_PROJECT_V17_modified\WAP_PROJECT_V17\WAP_PROJECT_V17\result\frame\process\baselines\baseline_surrogate.npz
+frame,EbM1,3,0.9950654685688557,0,0,True,SP3,1000000,D:\a\WAP_PROJECT_V17_modified\WAP_PROJECT_V17\WAP_PROJECT_V17\result\frame\process\baselines\baseline_surrogate.npz
+frame,EbM2,3,0.9950654685688557,0,0,True,SP3,1000000,D:\a\WAP_PROJECT_V17_modified\WAP_PROJECT_V17\WAP_PROJECT_V17\result\frame\process\baselines\baseline_surrogate.npz
+frame,EbM3,3,0.9832655229690735,1,0,False,SP3,1000000,D:\a\WAP_PROJECT_V17_modified\WAP_PROJECT_V17\WAP_PROJECT_V17\result\frame\process\baselines\baseline_surrogate.npz
+frame,GcM1,3,0.8600488710777019,34,28,False,SP3,1000000,D:\a\WAP_PROJECT_V17_modified\WAP_PROJECT_V17\WAP_PROJECT_V17\result\frame\process\baselines\baseline_surrogate.npz
+frame,GcM2,3,0.7922826830347287,67,53,False,SP3,1000000,D:\a\WAP_PROJECT_V17_modified\WAP_PROJECT_V17\WAP_PROJECT_V17\result\frame\process\baselines\baseline_surrogate.npz
+enclosure,PM,12,0.9867630843463076,0,0,True,SP3,1000000,D:\a\WAP_PROJECT_V17_modified\WAP_PROJECT_V17\WAP_PROJECT_V17\result\enclosure\process\baselines\baseline_surrogate.npz
+enclosure,EbM1,12,0.6729949335262116,159,100,False,SP3,1000000,D:\a\WAP_PROJECT_V17_modified\WAP_PROJECT_V17\WAP_PROJECT_V17\result\enclosure\process\baselines\baseline_surrogate.npz
+enclosure,EbM2,12,0.6785646815337392,130,118,False,SP3,1000000,D:\a\WAP_PROJECT_V17_modified\WAP_PROJECT_V17\WAP_PROJECT_V17\result\enclosure\process\baselines\baseline_surrogate.npz
+enclosure,EbM3,12,0.7841737313671509,103,69,False,SP3,1000000,D:\a\WAP_PROJECT_V17_modified\WAP_PROJECT_V17\WAP_PROJECT_V17\result\enclosure\process\baselines\baseline_surrogate.npz
+enclosure,GcM1,12,0.6744995227922531,162,143,False,SP3,1000000,D:\a\WAP_PROJECT_V17_modified\WAP_PROJECT_V17\WAP_PROJECT_V17\result\enclosure\process\baselines\baseline_surrogate.npz
+enclosure,GcM2,12,0.6819360584667548,166,153,False,SP3,1000000,D:\a\WAP_PROJECT_V17_modified\WAP_PROJECT_V17\WAP_PROJECT_V17\result\enclosure\process\baselines\baseline_surrogate.npz
