@@ -44,7 +44,7 @@ This library includes **17 core functions** divided into three groups: **G-serie
 
 | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/MOO_Framework/data/visualization_bases/frame_architecture.png?raw=true" width="420" alt="IFC2PLY&XML Library" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/MOO_Framework/data/visualization_bases/enclosure_architecture.png?raw=true" width="420" alt="Signal Coverage Model" /> |
 |:--:|:--:|
-| IFC2PLY&XML function library (`pip install ifc2ply_xml`) | Signal coverage models: frame stage (left) & enclosure stage (right) |
+| IFC2PLY&XML function library (`pip install ifc2ply_xml`) | Signal coverage models: frame stage (left) & enclosure (right) |
 
 The G-series functions convert IFC building elements (columns, beams, walls, doors, windows, slabs, roofs) into vertex-based PLY meshes. The P-series functions map IFC material attributes to XML entries. The W-series functions encode wireless-propagation properties including reflection loss, transmission loss, and diffraction loss parameters.
 
@@ -92,25 +92,37 @@ The WAP count is determined iteratively from N = 1. The GA starts from multiple 
 
 ### PM heatmaps — Frame stage (RSRP per floor)
 
-| <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/registered_heatmaps/frame_PM_rsrp_1F_notext.png?raw=true" width="280" alt="Frame PM RSRP 1F" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/registered_heatmaps/frame_PM_rsrp_2F_notext.png?raw=true" width="280" alt="Frame PM RSRP 2F" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/registered_heatmaps/frame_PM_rsrp_3F_notext.png?raw=true" width="280" alt="Frame PM RSRP 3F" /> |
+| <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/registered_heatmaps/frame_PM_rsrp_1F.png?raw=true" width="280" alt="Frame PM RSRP 1F" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/registered_heatmaps/frame_PM_rsrp_2F.png?raw=true" width="280" alt="Frame PM RSRP 2F" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/registered_heatmaps/frame_PM_rsrp_3F.png?raw=true" width="280" alt="Frame PM RSRP 3F" /> |
 |:--:|:--:|:--:|
 | Frame PM — RSRP 1F | Frame PM — RSRP 2F | Frame PM — RSRP 3F |
 
+### PM heatmaps — Frame stage (RSRQ per floor)
+
+| <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/registered_heatmaps/frame_PM_rsrq_1F.png?raw=true" width="280" alt="Frame PM RSRQ 1F" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/registered_heatmaps/frame_PM_rsrq_2F.png?raw=true" width="280" alt="Frame PM RSRQ 2F" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/registered_heatmaps/frame_PM_rsrq_3F.png?raw=true" width="280" alt="Frame PM RSRQ 3F" /> |
+|:--:|:--:|:--:|
+| Frame PM — RSRQ 1F | Frame PM — RSRQ 2F | Frame PM — RSRQ 3F |
+
+### PM heatmaps — Frame stage (SINR per floor)
+
+| <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/registered_heatmaps/frame_PM_sinr_1F.png?raw=true" width="280" alt="Frame PM SINR 1F" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/registered_heatmaps/frame_PM_sinr_2F.png?raw=true" width="280" alt="Frame PM SINR 2F" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/registered_heatmaps/frame_PM_sinr_3F.png?raw=true" width="280" alt="Frame PM SINR 3F" /> |
+|:--:|:--:|:--:|
+| Frame PM — SINR 1F | Frame PM — SINR 2F | Frame PM — SINR 3F |
+
 ### PM heatmaps — Enclosure stage (RSRP per floor)
 
-| <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/registered_heatmaps/enclosure_PM_rsrp_1F_notext.png?raw=true" width="280" alt="Enclosure PM RSRP 1F" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/registered_heatmaps/enclosure_PM_rsrp_2F_notext.png?raw=true" width="280" alt="Enclosure PM RSRP 2F" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/registered_heatmaps/enclosure_PM_rsrp_3F_notext.png?raw=true" width="280" alt="Enclosure PM RSRP 3F" /> |
+| <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/registered_heatmaps/enclosure_PM_rsrp_1F.png?raw=true" width="280" alt="Enclosure PM RSRP 1F" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/registered_heatmaps/enclosure_PM_rsrp_2F.png?raw=true" width="280" alt="Enclosure PM RSRP 2F" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/registered_heatmaps/enclosure_PM_rsrp_3F.png?raw=true" width="280" alt="Enclosure PM RSRP 3F" /> |
 |:--:|:--:|:--:|
 | Enclosure PM — RSRP 1F | Enclosure PM — RSRP 2F | Enclosure PM — RSRP 3F |
 
 ### PM 3D stacked overview — Frame stage
 
-| <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/stacked_registered_heatmaps/frame_PM_rsrp_stacked_notext.png?raw=true" width="280" alt="Frame PM RSRP stacked" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/stacked_registered_heatmaps/frame_PM_rsrq_stacked_notext.png?raw=true" width="280" alt="Frame PM RSRQ stacked" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/stacked_registered_heatmaps/frame_PM_sinr_stacked_notext.png?raw=true" width="280" alt="Frame PM SINR stacked" /> |
+| <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/stacked_registered_heatmaps/frame_PM_rsrp_stacked.png?raw=true" width="280" alt="Frame PM RSRP stacked" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/stacked_registered_heatmaps/frame_PM_rsrq_stacked.png?raw=true" width="280" alt="Frame PM RSRQ stacked" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/stacked_registered_heatmaps/frame_PM_sinr_stacked.png?raw=true" width="280" alt="Frame PM SINR stacked" /> |
 |:--:|:--:|:--:|
 | Frame PM — RSRP | Frame PM — RSRQ | Frame PM — SINR |
 
 ### PM 3D stacked overview — Enclosure stage
 
-| <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/stacked_registered_heatmaps/enclosure_PM_rsrp_stacked_notext.png?raw=true" width="280" alt="Enclosure PM RSRP stacked" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/stacked_registered_heatmaps/enclosure_PM_rsrq_stacked_notext.png?raw=true" width="280" alt="Enclosure PM RSRQ stacked" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/stacked_registered_heatmaps/enclosure_PM_sinr_stacked_notext.png?raw=true" width="280" alt="Enclosure PM SINR stacked" /> |
+| <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/stacked_registered_heatmaps/enclosure_PM_rsrp_stacked.png?raw=true" width="280" alt="Enclosure PM RSRP stacked" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/stacked_registered_heatmaps/enclosure_PM_rsrq_stacked.png?raw=true" width="280" alt="Enclosure PM RSRQ stacked" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/stacked_registered_heatmaps/enclosure_PM_sinr_stacked.png?raw=true" width="280" alt="Enclosure PM SINR stacked" /> |
 |:--:|:--:|:--:|
 | Enclosure PM — RSRP | Enclosure PM — RSRQ | Enclosure PM — SINR |
 
@@ -237,9 +249,21 @@ The MOO framework uses DeepSeek, SP3 at 23 dBm, SC1 priority weight 2.
 | EbM2 | Akuvox-inspired | 0.995 | 0.679 | +0.3% | +45.4% |
 | EbM3 | Siemens-inspired | 0.983 | 0.784 | +1.5% | +25.8% |
 
+### Expert 3D stacked heatmaps — Frame stage
+
+| <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/stacked_registered_heatmaps/frame_EbM1_rsrp_stacked.png?raw=true" width="280" alt="EbM1 Frame RSRP" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/stacked_registered_heatmaps/frame_EbM2_rsrp_stacked.png?raw=true" width="280" alt="EbM2 Frame RSRP" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/stacked_registered_heatmaps/frame_EbM3_rsrp_stacked.png?raw=true" width="280" alt="EbM3 Frame RSRP" /> |
+|:--:|:--:|:--:|
+| Frame EbM1 (Huawei) — RSRP | Frame EbM2 (Akuvox) — RSRP | Frame EbM3 (Siemens) — RSRP |
+
+### Expert 3D stacked heatmaps — Enclosure stage
+
+| <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/stacked_registered_heatmaps/enclosure_EbM1_rsrp_stacked.png?raw=true" width="280" alt="EbM1 Enclosure RSRP" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/stacked_registered_heatmaps/enclosure_EbM2_rsrp_stacked.png?raw=true" width="280" alt="EbM2 Enclosure RSRP" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/stacked_registered_heatmaps/enclosure_EbM3_rsrp_stacked.png?raw=true" width="280" alt="EbM3 Enclosure RSRP" /> |
+|:--:|:--:|:--:|
+| Enclosure EbM1 (Huawei) — RSRP | Enclosure EbM2 (Akuvox) — RSRP | Enclosure EbM3 (Siemens) — RSRP |
+
 ### Violin plots — Expert comparison
 
-| <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/violin/violin_expert_frame_notext.png?raw=true" width="420" alt="Expert Frame Violin" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/violin/violin_expert_enclosure_notext.png?raw=true" width="420" alt="Expert Enclosure Violin" /> |
+| <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/violin/violin_expert_frame.png?raw=true" width="420" alt="Expert Frame Violin" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/violin/violin_expert_enclosure.png?raw=true" width="420" alt="Expert Enclosure Violin" /> |
 |:--:|:--:|
 | PM vs EbM1/EbM2/EbM3 — Frame stage | PM vs EbM1/EbM2/EbM3 — Enclosure stage |
 
@@ -251,9 +275,21 @@ The MOO framework uses DeepSeek, SP3 at 23 dBm, SC1 priority weight 2.
 | GcM1 | Hexagonal coverage + GA | 0.860 | 0.674 | +16.0% | +46.3% |
 | GcM2 | Circular coverage + GA | 0.792 | 0.682 | +25.9% | +44.7% |
 
+### Geometric 3D stacked heatmaps — Frame stage
+
+| <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/stacked_registered_heatmaps/frame_GcM1_rsrp_stacked.png?raw=true" width="420" alt="GcM1 Frame RSRP" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/stacked_registered_heatmaps/frame_GcM2_rsrp_stacked.png?raw=true" width="420" alt="GcM2 Frame RSRP" /> |
+|:--:|:--:|
+| Frame GcM1 (Hexagonal) — RSRP | Frame GcM2 (Circular) — RSRP |
+
+### Geometric 3D stacked heatmaps — Enclosure stage
+
+| <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/stacked_registered_heatmaps/enclosure_GcM1_rsrp_stacked.png?raw=true" width="420" alt="GcM1 Enclosure RSRP" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/stacked_registered_heatmaps/enclosure_GcM2_rsrp_stacked.png?raw=true" width="420" alt="GcM2 Enclosure RSRP" /> |
+|:--:|:--:|
+| Enclosure GcM1 (Hexagonal) — RSRP | Enclosure GcM2 (Circular) — RSRP |
+
 ### Violin plots — Geometric comparison
 
-| <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/violin/violin_geometric_frame_notext.png?raw=true" width="420" alt="Geometric Frame Violin" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/violin/violin_geometric_enclosure_notext.png?raw=true" width="420" alt="Geometric Enclosure Violin" /> |
+| <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/violin/violin_geometric_frame.png?raw=true" width="420" alt="Geometric Frame Violin" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/violin/violin_geometric_enclosure.png?raw=true" width="420" alt="Geometric Enclosure Violin" /> |
 |:--:|:--:|
 | PM vs GcM1/GcM2 — Frame stage | PM vs GcM1/GcM2 — Enclosure stage |
 
