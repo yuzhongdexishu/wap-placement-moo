@@ -9,9 +9,9 @@
 # 1 Summary of supplemental materials
 This table below summarizes the key directories of this repository and the supplemental materials supporting the paper.
 
-<img width="900" height="600" alt="Frame Architecture" src="https://raw.githubusercontent.com/yuzhongdexishu/wap-placement-moo/main/MOO_Framework/data/visualization_bases/frame_architecture.png" />
+<img width="900" height="600" alt="Frame Architecture" src="MOO_Framework/data/visualization_bases/frame_architecture.png" />
 
-<img width="900" height="600" alt="Enclosure Architecture" src="https://raw.githubusercontent.com/yuzhongdexishu/wap-placement-moo/main/MOO_Framework/data/visualization_bases/enclosure_architecture.png" />
+<img width="900" height="600" alt="Enclosure Architecture" src="MOO_Framework/data/visualization_bases/enclosure_architecture.png" />
 
 The supplemental materials (`Supplement_Final_English/`) include the following tables:
 
@@ -43,23 +43,23 @@ The data transformation from BIM's IFC format to Sionna RT-compatible PLY meshes
 
 This library includes **17 core functions** divided into three groups: **G-series** (geometry conversion, 7 functions), **P-series** (material property conversion, 3 functions), and **W-series** (wireless-propagation property conversion, 7 functions).
 
-![IFC2PLY&XML Function Library](https://raw.githubusercontent.com/yuzhongdexishu/wap-placement-moo/main/MOO_Framework/data/visualization_bases/frame_architecture.png)
+![IFC2PLY&XML Function Library](MOO_Framework/data/visualization_bases/frame_architecture.png)
 
 ↑↑↑ The IFC2PLY&XML function library released as an open-source Python package (`pip install ifc2ply_xml`)
 
 The G-series functions convert IFC building elements (columns, beams, walls, doors, windows, slabs, roofs) into vertex-based PLY meshes. The P-series functions map IFC material attributes to XML entries. The W-series functions encode wireless-propagation properties including reflection loss, transmission loss, and diffraction loss parameters.
 
-![Enclosure Architecture](https://raw.githubusercontent.com/yuzhongdexishu/wap-placement-moo/main/MOO_Framework/data/visualization_bases/enclosure_architecture.png)
+![Enclosure Architecture](MOO_Framework/data/visualization_bases/enclosure_architecture.png)
 
 ↑↑↑ Signal coverage models for the frame stage (left) and enclosure stage (right), constructed from IFC data via the IFC2PLY&XML library
 
 ### Floor-level visualization bases
 
-<img width="400" height="300" alt="Frame 1F" src="https://raw.githubusercontent.com/yuzhongdexishu/wap-placement-moo/main/MOO_Framework/data/visualization_bases/frame_1F_cutaway.png" /> <img width="400" height="300" alt="Frame 2F" src="https://raw.githubusercontent.com/yuzhongdexishu/wap-placement-moo/main/MOO_Framework/data/visualization_bases/frame_2F_cutaway.png" /> <img width="400" height="300" alt="Frame 3F" src="https://raw.githubusercontent.com/yuzhongdexishu/wap-placement-moo/main/MOO_Framework/data/visualization_bases/frame_3F_cutaway.png" />
+<img width="400" height="300" alt="Frame 1F" src="MOO_Framework/data/visualization_bases/frame_1F_cutaway.png" /> <img width="400" height="300" alt="Frame 2F" src="MOO_Framework/data/visualization_bases/frame_2F_cutaway.png" /> <img width="400" height="300" alt="Frame 3F" src="MOO_Framework/data/visualization_bases/frame_3F_cutaway.png" />
 
 ↑↑↑ Frame stage — Floor 1, 2, 3 cutaway views
 
-<img width="400" height="300" alt="Enclosure 1F" src="https://raw.githubusercontent.com/yuzhongdexishu/wap-placement-moo/main/MOO_Framework/data/visualization_bases/enclosure_1F_cutaway.png" /> <img width="400" height="300" alt="Enclosure 2F" src="https://raw.githubusercontent.com/yuzhongdexishu/wap-placement-moo/main/MOO_Framework/data/visualization_bases/enclosure_2F_cutaway.png" /> <img width="400" height="300" alt="Enclosure 3F" src="https://raw.githubusercontent.com/yuzhongdexishu/wap-placement-moo/main/MOO_Framework/data/visualization_bases/enclosure_3F_cutaway.png" />
+<img width="400" height="300" alt="Enclosure 1F" src="MOO_Framework/data/visualization_bases/enclosure_1F_cutaway.png" /> <img width="400" height="300" alt="Enclosure 2F" src="MOO_Framework/data/visualization_bases/enclosure_2F_cutaway.png" /> <img width="400" height="300" alt="Enclosure 3F" src="MOO_Framework/data/visualization_bases/enclosure_3F_cutaway.png" />
 
 ↑↑↑ Enclosure stage — Floor 1, 2, 3 cutaway views
 
