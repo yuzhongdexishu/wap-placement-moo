@@ -1,0 +1,15 @@
+﻿Table S5,"Formal six-LLM task records, one row per source JSON file"
+Scope,6 models × 2 stages × 5 sensor profiles × 8 scenarios = 480 assigned tasks
+Success,474/480 formal tasks (98.75%); each successful task completed 8 tool calls
+Failure,"Six Grok-4.7 tasks failed in the LLM/API category (HTTP 503); single-attempt policy, no retry"
+Interpretation,Dense-domain validation is separate from formal task completion and is not included in the success fraction
+Source,result/six_llm/tasks/*.json; active_scope.json; completion_rate.json
+Propagation cache,"16 shared stage/scenario Sionna maps; 1,000,000 samples per transmitter in metadata"
+Tool detail,"The S5 tool inputs and outputs worksheet records the exact eight-tool chain, its inputs, checks, outputs, and implementation files."
+Count search,"The 150-site dictionary is searched from N=1; an RSRP lower bound precedes full RSRP, RSRQ, and SINR checks on 600 receivers. The JSON records whether minimality is proved for this finite site and receiver set."
+GA initialization,"The fixed-count feasible layout seeds an 80-member population; up to 12 further feasible covers are added, then random layouts are repaired and snapped to distinct legal dictionary sites with 4 m spacing."
+GA fitness,"Each receiver averages three clipped normalized indicators. The scheme F is the weighted receiver mean, including zero for no-link points. Internal ranking puts every feasible layout above an infeasible one and otherwise prefers fewer failures."
+GA operators,35 generations; four elites; four-member tournament selection; crossover probability 0.75; mutation probability 0.30. Every offspring uses distinct legal sites with at least 4 m spacing.
+Final refinement,A five-pass one-site search accepts only fitness improvements that preserve full coverage. Final export rechecks all 600 RF thresholds; independent dense-domain probes are reported separately.
+Data provenance,"S1 materials and ITU coefficients, S2 GA settings, S3 profiles/scenario IDs, S4 raw result values, and S5 task records were checked against the code-folder CSV/JSON sources; details are in Supplement_Data_Audit.json."
+PM score distinction,S4a reports original final-results F. The paired common-map comparison uses a separate PM F: frame 0.9975968 and enclosure 0.9867631. These values should not be interchanged.

@@ -1,0 +1,20 @@
+﻿Table S3d. IFC geometry and scenario validation requirements,
+Methodological definitions and limitations associated with Tables S1–S3.,
+Item,Operational definition / evidence boundary
+Structural frame IFC inventory,"112 IfcColumn, 108 IfcBeam, 7 IfcSlab, 6 IfcGrid, 4 IfcOpeningElement, 0 IfcWall, 0 IfcSpace, 0 IfcCovering."
+Enclosure IFC inventory,"112 IfcColumn, 108 IfcBeam, 39 IfcSlab, 110 IfcWall/IfcWallStandardCase, 51 IfcDoor, 49 IfcWindow, 4 IfcStair, 8 IfcStairFlight, 6 IfcGrid, 104 IfcOpeningElement, 0 IfcSpace, 0 IfcCovering."
+High-priority weight,"For one selected SC at a time, set w=2 only for valid receiver points inside its own accessible task region; all other valid receiver points w=1."
+Parameter provenance,"0.5–2.0 m stand-off bands, 0.75–1.0 m corridor half-widths and 1.0–2.0 m workstation radii are modeling choices, not per-device validated manufacturer specifications."
+Geometry method,"IFC world-coordinate element solids → support floors, openings, obstacles and accessible robot footprint → task stations/routes → free-space intersection → receiver-point inclusion."
+Receiver height,"For wheeled/quadruped robots, apply floor-specific RF evaluation heights consistent with actual robot antenna/receiver positions; do not assign all 3D vertical layers along the same 2D path."
+Regions vs. paths,"A region is a planning-level communication-demand proxy; not a recorded robot trajectory. Validate weighted receiver counts, real access, and binary mask difference between scenarios."
+Opening handling,IfcOpeningElement in enclosure includes door/window openings. Only treat an opening as a slab hole when IfcRelVoidsElement points to an IfcSlab.
+Reconstructed rooms,"No IfcSpace in either IFC. Rooms/corridors are inferred from enclosure wall solids, door connectivity and slabs. Room names and east/west eligibility are not guaranteed."
+Floor-level facilities,"In each stage, allocate six material areas and six separate waste areas: one of each at west and east ends of each floor 1F–3F. Check access, load, fire/egress, separation and non-overlap."
+Source boundary,"Robot studies establish technical feasibility for particular work tasks; material/waste layout papers support broad planning logic, not a universal six-zone prescription."
+F-SC2 limitation,A cited beam NDT study used a Sawyer robotic arm with laboratory beam specimens. The floor-mobile inspection geometry is a scenario adaptation.
+F-SC3 limitation,No direct evidence is claimed for a dedicated slab-edge robot. The task is an application of BIM-guided/object/concrete inspection to slab-edge targets.
+F-SC8 limitation,Quadruped-assisted construction safety inspection is supported. Automatic guardrail presence/damage detection accuracy is not validated by the cited study.
+E-SC4 limitation,Only geometrically identifiable and specified sealant joints count. Ordinary intersecting walls are not proof of a joint needing caulking.
+E-SC5 limitation,"1F public floor finish is a site scenario assumption; no IfcCovering or IfcSpace. Published tiling robot focuses on workstations, not fully autonomous room-to-room movement."
+E-SC6 limitation,Staircase cleaning is a finishing/pre-handover activity rather than structural construction.

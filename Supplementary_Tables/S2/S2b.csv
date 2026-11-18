@@ -1,0 +1,17 @@
+﻿Table S2b,Value,Unit / interpretation,Source
+Propagation solver,Sionna RT RadioMapSolver,Radio-map surrogate,01_problem_definition.json
+Metric model,wideband path-gain approximation of SS metrics,Research approximation; not waveform-equivalent UE measurement,define_problem.py
+RSRP normalization basic / reliable,-140 / -110,dBm,optimization_problem.normalization
+RSRQ normalization basic / reliable,-19.5 / -15,dB,optimization_problem.normalization
+SINR normalization basic / reliable,0 / 15,dB,optimization_problem.normalization
+Per-indicator normalization,"clip((x − basic)/(reliable − basic), 0, 1)",dimensionless,define_problem.py composite_score
+Receiver composite,(normalized RSRP + normalized RSRQ + normalized SINR)/3,0–1,define_problem.py composite_score
+No-link receiver,Composite score = 0; remains in denominator,0–1,define_problem.py composite_score
+Scheme score,Weighted mean of receiver composite scores,0–1,receiver_composite.json
+Required RSRP,-140,dBm,quality_requirements
+Required RSRQ,-19.5,dB,quality_requirements
+Required SINR,0,dB,quality_requirements
+Frequency,3.5,GHz,sensor_profile
+Samples per transmitter,1000000,Monte Carlo samples,comparison_table.csv
+Max path depth,3,interactions,last_agent_response.json
+Propagation effects,"LoS, specular reflection, diffraction, refraction",enabled,last_agent_response.json

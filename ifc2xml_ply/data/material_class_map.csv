@@ -1,0 +1,18 @@
+﻿ifc_file,material_step_id,material_name,material_class,mapping_status,rationale
+frame.ifc,81,混凝土 - 现场浇注混凝土,concrete,direct_class,Explicit concrete name
+frame.ifc,1307,<Unnamed>,,unmatched,Unnamed IFC material: no defensible class assignment
+frame.ifc,2081,水泥砂浆,,unmatched,Cement mortar not given an independent class in selected ITU table
+frame.ifc,2194,面砖,,unmatched,Facing tile material is unspecified; not presumed to be structural brick
+frame.ifc,2202,砌体-普通砖 75x225mm,brick,direct_class,Explicit fired-brick name
+enclosure.ifc,81,混凝土 - 现场浇注混凝土,concrete,direct_class,Explicit concrete name
+enclosure.ifc,1371,教学楼内墙面,,unmatched,Wall finish label does not specify its physical material
+enclosure.ifc,3832,<Unnamed>,,unmatched,Unnamed IFC material: no defensible class assignment
+enclosure.ifc,3867,教学楼外墙面,,unmatched,Wall finish label does not specify its physical material
+enclosure.ifc,3872,混凝土砌块,concrete,class_level_proxy,Concrete block approximated by bulk concrete class; validate porosity
+enclosure.ifc,8370,玻璃,glass,direct_class,Explicit glass name
+enclosure.ifc,8851,金属-铝-白色,metal,class_level_proxy,Metal class model; not alloy-specific measurement
+enclosure.ifc,34422,金属-钢-深灰色,metal,class_level_proxy,Metal class model; not alloy-specific measurement
+enclosure.ifc,36262,金属 - 铝-白色,metal,class_level_proxy,Metal class model; not alloy-specific measurement
+enclosure.ifc,41699,水泥砂浆,,unmatched,Cement mortar not given an independent class in selected ITU table
+enclosure.ifc,41810,面砖,,unmatched,Facing tile material is unspecified; not presumed to be structural brick
+enclosure.ifc,41818,砌体-普通砖 75x225mm,brick,direct_class,Explicit fired-brick name

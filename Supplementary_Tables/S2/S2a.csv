@@ -1,0 +1,12 @@
+﻿Table S2a,Frame,Enclosure,Definition / source
+Population size,80,80,optimization_problem.ga
+Generations,35,35,optimization_problem.ga
+Crossover probability,0.75,0.75,optimization_problem.ga
+Mutation probability,0.3,0.3,optimization_problem.ga
+Tournament size,4,4,optimization_problem.ga
+Elites,4,4,optimization_problem.ga
+Random seed,20260717,20260717,optimization_problem.ga
+Minimum WAP spacing (m),4,4,Euclidean 3D distance
+WAP z margin (m),0.35,0.35,Spatial constraint
+Selected WAP count,3,12,Minimum feasible count for selected 600-point set
+Count search start,1,1,Search begins from N=1

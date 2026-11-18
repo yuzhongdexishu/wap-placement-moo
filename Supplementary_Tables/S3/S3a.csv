@@ -1,0 +1,7 @@
+﻿Table S3a,TX power (dBm),Frequency (GHz),Bandwidth (MHz),RBs,TX gain (dBi),RX gain (dBi),Noise figure (dB),Noise floor (dBm),Channel count
+SP1,13,3.5,20,106,0,0,9,-92,1
+SP2,18,3.5,20,106,0,0,9,-92,1
+SP3,23,3.5,20,106,0,0,9,-92,1
+SP4,28,3.5,20,106,0,0,9,-92,1
+SP5,33,3.5,20,106,0,0,9,-92,1
+Comparison experiments use SP3 (23 dBm); five profiles appear in current V17 code.,,,,,,,,,

@@ -1,0 +1,8 @@
+﻿Table S2c,Frame,Enclosure,Meaning / source
+Receiver count,600,600,Formal selected points
+Priority scenario,F-SC1,E-SC1,SC1 per stage
+Priority weight,2,2,Points inside SC1 region
+Regular weight,1,1,Other valid points
+Coordinate frame,IFC world metres,IFC world metres,Stage_SC_Regions.json
+Receiver fields,"ID, x, y, z, floor, weight","ID, x, y, z, floor, weight",02_receivers.json
+Receiver heights (observed),"1.25, 5.75, 9.65","1.25, 5.75, 9.65",Metres; actual formal-point file

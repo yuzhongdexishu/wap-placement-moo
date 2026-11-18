@@ -1,0 +1,81 @@
+﻿Table S1c. IFC-to-PLY/XML object and attribute mapping schema,,,
+IFC2X3 source entities and PLY/XML target fields; see definitions below.,,,
+"A. IFC part — building, spatial, geometric and material source definitions",,,
+Entity,Type,Unit,Definition
+A1. Building element — inheritance chain in the figure,,,
+IfcRoot,Root entity,—,Root of object identity and ownership.
+IfcObjectDefinition,Abstract entity,—,Supertype of semantic object definitions.
+IfcObject,Abstract entity,—,Object occurrence and type metadata in the IFC2X3 chain.
+IfcProduct,Abstract entity,—,Has placement and optional geometric representation.
+IfcElement,Abstract entity,—,General category for physical elements.
+IfcBuildingElement,Abstract entity,—,Building-element class used for the seven G transforms.
+IfcWall / IfcDoor / IfcColumn / IfcBeam / IfcWindow / IfcSlab / IfcRoof / ...,Element occurrences,—,Grouped figure box: G1–G7 dispatch these elements; other supported types use the shared geometry core.
+"A2. Spatial structure — composition, not entity inheritance",,,
+IfcProject,Spatial/context entity,—,Project-level spatial context.
+IfcSite,Spatial/context entity,—,Site context for the building.
+IfcBuilding,Spatial/context entity,—,Building container under the project/site.
+IfcBuildingStorey,Spatial/context entity,—,Building-storey container for contained elements.
+IfcBuildingElementProxy,"Building element, NOT spatial entity",—,"Shown under Spatial structure in Fig. 1, but its IFC2X3 classification is a physical building element. Exported as proxy PLY where supported."
+"A3. Geometry — IFC representation path (arrows mean references, not inheritance)",,,
+IfcProduct.Representation,Reference property,—,"Connects an element to its product shape; in the figure, 'Representation' is a relation label, not a separate IFC entity."
+IfcProductDefinitionShape,Shape entity,—,Contains the product's available geometric representations.
+IfcShapeRepresentation,Representation entity,—,Contains the representation items processed by the IfcOpenShell geometry kernel.
+IfcExtrudedAreaSolid.Depth,Extrusion attribute,Project length unit,"A genuine IFC extrusion length, commonly in mm in the provided IFC files."
+IfcRectangleProfileDef.XDim / YDim,Profile attributes,Project length unit,True rectangular profile dimensions for a particular swept-solid representation.
+IfcLocalPlacement,Placement entity,—,Used to transform local mesh coordinates into a common project coordinate system.
+IfcMappedItem / IfcFacetedBrep / other geometry,Alternative representation items,—,Other supported IFC geometry representations are processed by IfcOpenShell; XDim/YDim/Depth are illustrative rather than universal.
+A4. Material associations and optional wireless properties,,,
+IfcElement.HasAssociations,Inverse/reference relationship,—,Inverse relationship from a product to IfcRelAssociatesMaterial; not an entity in the figure.
+IfcRelAssociatesMaterial,Relationship entity,—,Associates physical IFC elements with material or material-layer structures.
+IfcMaterialLayerSet / IfcMaterialLayer,Material composite,—,Ordered material layers of an element; each IfcMaterialLayer has LayerThickness.
+IfcMaterial,Material entity,—,P1 uses the material name; actual material class is supplemented by material_class_map.csv.
+IfcSurfaceStyle / IfcColourRGB,Presentation/colour entities,RGB normalized components,P3 can obtain optional surface colour through material representation and style relations.
+IfcExtendedMaterialProperties (IFC2X3),Material-property entity,—,Correct IFC2X3 material-level container for the optional Pset_MaterialWirelessPropagation; Fig. 1's IfcMaterialProperties is an IFC4-style node and should not be shown as the IFC2X3 chain.
+IfcRelDefinesByProperties / IfcPropertySet,Property-set association,—,Optional object-level attachment route for Pset_MaterialWirelessPropagation.
+IfcPropertySingleValue,Wireless-property entity,Property-specific,"Used for individual optional Frequency, RelativePermittivity, RelativePermeability, Conductivity and legacy loss values."
+B. Mapping of G/P/W information — figure labels and actual conversion rules,,,
+Entity / figure property,Type / function,Unit,Actual source → XML/PLY mapping
+B1. Geometry-related mappings (G1–G7),,,
+"Columns: XDim, YDim, Depth",G1 | IfcColumn,m,"Figure uses representative profile/extrusion parameters; actual G1 tessellates IfcColumn.Representation and writes PLY vertices (x,y,z) and triangle vertex_indices."
+"Beams: XDim, YDim, Depth",G2 | IfcBeam,m,Same illustrative IFC attributes; actual G2 uses the IfcOpenShell geometry engine and exports the element's transformed mesh.
+"Walls: XDim, YDim, Depth",G3 | IfcWall,m,"Dimensions illustrate rectangular extrusions, not guaranteed properties of every wall. Actual output is wall_*.ply."
+"Doors: XDim, YDim, Depth",G4 | IfcDoor,m,"The figure's dimensional boxes are representative only. The current G4 does not directly read XDim/YDim/Depth, but tessellates the IFC geometric representation."
+Windows (within Other elements),G5 | IfcWindow,m,Figure combines these with Other elements. G5 tessellates window geometry and emits a PLY mesh.
+Slabs (within Other elements),G6 | IfcSlab,m,G6 tessellates the slab's IFC geometry and emits a PLY mesh.
+Roofs / Other elements,G7 | IfcRoof; shared G core,m,"G7 maps roofs; IfcMember, IfcPlate, IfcRailing, IfcStairFlight, IfcBuildingElementProxy and similar elements use mesh_from_product, without adding G8+ functions."
+B2. Material-related mappings (P1–P3),,,
+Name,P1 | IfcMaterial.Name,Text,"P1 is called for material identity and provenance; the current model.xml records the IFC material name in a comment, not a <Name> element."
+Thickness,P2 via W6 | LayerThickness,m,"W6 calls P2 to convert/sum IFC layer thickness. If missing, thickness-only CSV baseline overrides are used, then explicit CLI --default-thickness-m."
+Color,P3 | IfcSurfaceStyle,RGB 0–1,"When available, an associated RGB surface style becomes the optional <rgb name=""color"" .../> child of a radio-material BSDF."
+B3. Wireless-related mappings (W1–W7),,,
+Frequency,W1,GHz / MHz metadata,"The conversion setting is 3.5 GHz by default. Frequency and wavelength are XML comments, not a numeric radio-material field; downstream Sionna must separately set scene.frequency."
+Permittivity (relative),W2,Dimensionless,"Pset_MaterialWirelessPropagation → baseline-only override CSV → ITU class ε′r = a fGHz^b, written as <float name=""relative_permittivity"">."
+Permeability (relative),W3,Dimensionless,"μr=1 is assumed/validated; it is written only to provenance, not as a BSDF numeric field."
+Conductivity,W4,S/m,"Pset_MaterialWirelessPropagation → baseline-only override CSV → ITU class σ = c fGHz^d, written as <float name=""conductivity"">."
+Reflection Loss (dB),W5,Not computed,The figure's loss is a conceptual propagation quantity. W5 writes scattering_coefficient=0 and xpd_coefficient=0 defaults (unless overridden); no ReflectionLoss dB.
+Transmission Loss (dB),W6 (uses P2),Not computed,"W6 prepares <float name=""thickness"">; it does not calculate transmission loss in dB. IFC LayerThickness takes precedence."
+Diffraction Loss (dB),W7,Not computed,W7 checks shared-edge triangular mesh topology and sets face_normals. Actual diffraction/wedge-path loss is not computed by this converter.
+C. PLY & XML part — target objects and attributes actually written,,,
+Entity / figure component,Type,Unit,Output definition and correspondence
+"C1. PLY file: Column/Beams, Walls/Doors and Other elements",,,
+"PLY file / Column, Beams, Walls, Doors, Other elements",Target geometry objects,—,Each generated meshes/<element>_<STEP-id>.ply stores the triangulated geometry of one exported IFC physical element.
+"x-coordinate, y-coordinate, z-coordinate","PLY vertex: x, y, z",m,Three world-coordinate vertex properties stored as double-precision values in PLY.
+vertex_indices,PLY face topology,Index,"A 3-index list for each triangular face, as shown in the revised figure."
+"nx-, ny-, nz-normal component",Figure-only: NOT stored,—,"The uploaded figure displays vertex normals, but the current PLY writer omits nx/ny/nz. The downstream renderer computes normals or uses XML face_normals=true; remove these three boxes or mark 'computed downstream'."
+Coordinate System,Geometric transform applied,m,An IFC local placement is applied before export; no standalone 'Coordinate System' object is written to XML/PLY.
+Ply id & Filename,XML shape ID and filename,Text path,"<shape type=""ply"" id=""…""> includes <string name=""filename"" value=""meshes/…""/>. Links XML objects to PLY geometry."
+C2. XML file: Material [GENERAL] and Material [FREQUENCY],,,
+XML file,"<scene version=""2.1.0"">",—,"Top-level Mitsuba/Sionna RT native scene definition, saved as model.xml."
+Column/Other elements,"<shape type=""ply"">",—,"One XML shape links its PLY file to one <bsdf type=""radio-material""> by <ref name=""bsdf"">."
+Material [GENERAL],"<bsdf type=""radio-material"">",—,Each element obtains a BSDF containing the effective material's electrical and thickness parameters.
+Attribute key & value,XML typed child elements,—,"<float name=""…"" value=""…""/> and optional <rgb name=""color"" value=""…""/>; literal Name remains a provenance comment."
+Name,XML comment (P1),Text,"IFC material identity is preserved in comments, not as an independent Name child element."
+Thickness,"<float name=""thickness"">",m,Effective layer slab thickness; IFC layer sum or explicit baseline fallback.
+Color,"<rgb name=""color"">",0–1 components,"Optional appearance colour, when linked IFC style is available."
+Material [FREQUENCY],Frequency-specific BSDF material,—,"Computed ε′r, σ and scattering/XPD inputs are written at the selected frequency; there is no separate MaterialFrequency XML object."
+Frequency,XML comments (W1),GHz / m,Conversion frequency and wavelength are metadata comments only.
+Permittivity,"<float name=""relative_permittivity"">",Dimensionless,Actual W2 frequency-specific radio material input.
+Permeability,XML comments (W3),Dimensionless,The nonmagnetic μr=1 assumption is checked and recorded but not written as a BSDF float.
+Conductivity,"<float name=""conductivity"">",S/m,Actual W4 radio material input.
+Reflection / Transmission / Diffraction Loss,No numeric dB target field,dB (not calculated),No loss field is generated. The three figure labels describe physical effects; Sionna would calculate path-dependent effects later using material inputs and mesh geometry.
+"Figure–code consistency: (i) move IfcBuildingElementProxy out of Spatial structure; (ii) replace the IFC2X3 IfcMaterialProperties node with IfcExtendedMaterialProperties if showing the wireless-material attachment; (iii) no standalone source XDim/YDim/Depth reading in current G1–G7; (iv) remove PLY nx/ny/nz boxes; (v) P1 Name and W1 Frequency are XML comments; (vi) W5/W6/W7 provide simulation inputs, NOT loss calculations.",,,
