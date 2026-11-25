@@ -6,7 +6,7 @@
 
 # 1 Summary of supplemental materials
 
-This private repository contains the code, inputs, selected results, manuscript figures, and supplementary tables for the paper. The materials are indexed below by the manuscript sections. Supplementary figure labels S1–S18 are a repository index for the displayed images; manuscript Figures 1–13 are indexed separately in [`plots/manuscript/README.md`](plots/manuscript/README.md).
+This repository contains the code, inputs, selected results, and supplementary tables for the paper. The materials are indexed below by manuscript section. Supplementary figure labels S1?S18 identify the displayed images.
 
 ### Fig. S1 BIM architecture views
 
