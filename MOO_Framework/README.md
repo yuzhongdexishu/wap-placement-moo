@@ -28,7 +28,7 @@ python run_experiment_geometric.py
 python run_baseline_comparison.py
 ```
 
-Supply API credentials through environment variables or the ignored local configuration files. `send_task2.py --dry-run` previews the six-LLM task matrix before a long or paid run.
+Add the regular-run DeepSeek credential to `config/llm_config.json` as `api_key`, or set `DEEPSEEK_API_KEY` (the environment variable takes precedence). For the six-LLM benchmark, add each model credential to the matching `api_key` field in `config/models.json` and verify its `model_name` and `base_url`. Both local JSON files are ignored by Git; leave the `.example.json` templates empty. `send_task2.py --dry-run` previews the six-LLM task matrix before a long or paid run.
 
 The formal optimization checks RSRP, RSRQ, and SINR at 600 selected receiver positions and searches 150 candidate WAP sites. Its minimum-count claim is limited to that finite candidate and receiver set. Separate dense-domain checks may have failures. The six-LLM completion metric measures successful execution of the eight-tool sequence, not dense-domain validation.
 

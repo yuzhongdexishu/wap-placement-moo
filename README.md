@@ -417,7 +417,7 @@ python -m pip install -r MOO_Framework/requirements.txt
 Copy-Item MOO_Framework/config/llm_config.example.json MOO_Framework/config/llm_config.json
 Copy-Item MOO_Framework/config/models.example.json MOO_Framework/config/models.json
 ```
-Edit config JSONs with your API keys (gitignored).
+The copied files are local and ignored by Git. For a regular MOO run, put the DeepSeek key in `MOO_Framework/config/llm_config.json` under `api_key`, or set the `DEEPSEEK_API_KEY` environment variable (which takes precedence). For the six-LLM benchmark, put each model?s key in its `api_key` field in `MOO_Framework/config/models.json`; also check that model names and `base_url` values match your provider. Keep `*.example.json` files free of real keys and do not commit the local JSON files.
 
 ## Run the MOO framework
 
