@@ -6,7 +6,7 @@
 
 # 1 Summary of supplemental materials
 
-This private repository contains the code, inputs, selected results, manuscript figures, and supplementary tables for the paper. The materials are indexed below by the manuscript sections. Supplementary figure labels S1–S18 are a repository index for the displayed images; manuscript Figures 1–13 are indexed separately in [`Figures/README.md`](Figures/README.md).
+This private repository contains the code, inputs, selected results, manuscript figures, and supplementary tables for the paper. The materials are indexed below by the manuscript sections. Supplementary figure labels S1–S18 are a repository index for the displayed images; manuscript Figures 1–13 are indexed separately in [`plots/manuscript/README.md`](plots/manuscript/README.md).
 
 ### Fig. S1 BIM architecture views
 
@@ -94,37 +94,37 @@ The WAP count is determined iteratively from N = 1. The GA starts from multiple 
 
 ### PM heatmaps — Frame stage (RSRP per floor) (Fig. S4, panels a–c)
 
-| <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/Figures/Results/registered_heatmaps/frame_PM_rsrp_1F.png?raw=true" width="280" alt="Frame PM RSRP 1F" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/Figures/Results/registered_heatmaps/frame_PM_rsrp_2F.png?raw=true" width="280" alt="Frame PM RSRP 2F" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/Figures/Results/registered_heatmaps/frame_PM_rsrp_3F.png?raw=true" width="280" alt="Frame PM RSRP 3F" /> |
+| <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/registered_heatmaps/frame_PM_rsrp_1F.png?raw=true" width="280" alt="Frame PM RSRP 1F" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/registered_heatmaps/frame_PM_rsrp_2F.png?raw=true" width="280" alt="Frame PM RSRP 2F" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/registered_heatmaps/frame_PM_rsrp_3F.png?raw=true" width="280" alt="Frame PM RSRP 3F" /> |
 |:--:|:--:|:--:|
 | **(a)** Frame PM — RSRP 1F | **(b)** Frame PM — RSRP 2F | **(c)** Frame PM — RSRP 3F |
 
 ### PM heatmaps — Frame stage (RSRQ per floor) (Fig. S5, panels a–c)
 
-| <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/Figures/Results/registered_heatmaps/frame_PM_rsrq_1F.png?raw=true" width="280" alt="Frame PM RSRQ 1F" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/Figures/Results/registered_heatmaps/frame_PM_rsrq_2F.png?raw=true" width="280" alt="Frame PM RSRQ 2F" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/Figures/Results/registered_heatmaps/frame_PM_rsrq_3F.png?raw=true" width="280" alt="Frame PM RSRQ 3F" /> |
+| <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/registered_heatmaps/frame_PM_rsrq_1F.png?raw=true" width="280" alt="Frame PM RSRQ 1F" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/registered_heatmaps/frame_PM_rsrq_2F.png?raw=true" width="280" alt="Frame PM RSRQ 2F" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/registered_heatmaps/frame_PM_rsrq_3F.png?raw=true" width="280" alt="Frame PM RSRQ 3F" /> |
 |:--:|:--:|:--:|
 | **(a)** Frame PM — RSRQ 1F | **(b)** Frame PM — RSRQ 2F | **(c)** Frame PM — RSRQ 3F |
 
 ### PM heatmaps — Frame stage (SINR per floor) (Fig. S6, panels a–c)
 
-| <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/Figures/Results/registered_heatmaps/frame_PM_sinr_1F.png?raw=true" width="280" alt="Frame PM SINR 1F" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/Figures/Results/registered_heatmaps/frame_PM_sinr_2F.png?raw=true" width="280" alt="Frame PM SINR 2F" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/Figures/Results/registered_heatmaps/frame_PM_sinr_3F.png?raw=true" width="280" alt="Frame PM SINR 3F" /> |
+| <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/registered_heatmaps/frame_PM_sinr_1F.png?raw=true" width="280" alt="Frame PM SINR 1F" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/registered_heatmaps/frame_PM_sinr_2F.png?raw=true" width="280" alt="Frame PM SINR 2F" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/registered_heatmaps/frame_PM_sinr_3F.png?raw=true" width="280" alt="Frame PM SINR 3F" /> |
 |:--:|:--:|:--:|
 | **(a)** Frame PM — SINR 1F | **(b)** Frame PM — SINR 2F | **(c)** Frame PM — SINR 3F |
 
 ### PM heatmaps — Enclosure stage (RSRP per floor) (Fig. S7, panels a–c)
 
-| <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/Figures/Results/registered_heatmaps/enclosure_PM_rsrp_1F.png?raw=true" width="280" alt="Enclosure PM RSRP 1F" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/Figures/Results/registered_heatmaps/enclosure_PM_rsrp_2F.png?raw=true" width="280" alt="Enclosure PM RSRP 2F" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/Figures/Results/registered_heatmaps/enclosure_PM_rsrp_3F.png?raw=true" width="280" alt="Enclosure PM RSRP 3F" /> |
+| <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/registered_heatmaps/enclosure_PM_rsrp_1F.png?raw=true" width="280" alt="Enclosure PM RSRP 1F" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/registered_heatmaps/enclosure_PM_rsrp_2F.png?raw=true" width="280" alt="Enclosure PM RSRP 2F" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/registered_heatmaps/enclosure_PM_rsrp_3F.png?raw=true" width="280" alt="Enclosure PM RSRP 3F" /> |
 |:--:|:--:|:--:|
 | **(a)** Enclosure PM — RSRP 1F | **(b)** Enclosure PM — RSRP 2F | **(c)** Enclosure PM — RSRP 3F |
 
 ### PM 3D stacked overview — Frame stage (Fig. S8, panels a–c)
 
-| <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/Figures/Results/stacked_registered_heatmaps/frame_PM_rsrp_stacked.png?raw=true" width="280" alt="Frame PM RSRP stacked" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/Figures/Results/stacked_registered_heatmaps/frame_PM_rsrq_stacked.png?raw=true" width="280" alt="Frame PM RSRQ stacked" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/Figures/Results/stacked_registered_heatmaps/frame_PM_sinr_stacked.png?raw=true" width="280" alt="Frame PM SINR stacked" /> |
+| <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/stacked_registered_heatmaps/frame_PM_rsrp_stacked.png?raw=true" width="280" alt="Frame PM RSRP stacked" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/stacked_registered_heatmaps/frame_PM_rsrq_stacked.png?raw=true" width="280" alt="Frame PM RSRQ stacked" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/stacked_registered_heatmaps/frame_PM_sinr_stacked.png?raw=true" width="280" alt="Frame PM SINR stacked" /> |
 |:--:|:--:|:--:|
 | **(a)** Frame PM — RSRP | **(b)** Frame PM — RSRQ | **(c)** Frame PM — SINR |
 
 ### PM 3D stacked overview — Enclosure stage (Fig. S9, panels a–c)
 
-| <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/Figures/Results/stacked_registered_heatmaps/enclosure_PM_rsrp_stacked.png?raw=true" width="280" alt="Enclosure PM RSRP stacked" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/Figures/Results/stacked_registered_heatmaps/enclosure_PM_rsrq_stacked.png?raw=true" width="280" alt="Enclosure PM RSRQ stacked" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/Figures/Results/stacked_registered_heatmaps/enclosure_PM_sinr_stacked.png?raw=true" width="280" alt="Enclosure PM SINR stacked" /> |
+| <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/stacked_registered_heatmaps/enclosure_PM_rsrp_stacked.png?raw=true" width="280" alt="Enclosure PM RSRP stacked" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/stacked_registered_heatmaps/enclosure_PM_rsrq_stacked.png?raw=true" width="280" alt="Enclosure PM RSRQ stacked" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/stacked_registered_heatmaps/enclosure_PM_sinr_stacked.png?raw=true" width="280" alt="Enclosure PM SINR stacked" /> |
 |:--:|:--:|:--:|
 | **(a)** Enclosure PM — RSRP | **(b)** Enclosure PM — RSRQ | **(c)** Enclosure PM — SINR |
 
@@ -229,7 +229,7 @@ MOO_Framework/mcp_servers/
 
 ## 4.1 Building profile and scenario settings
 
-A primary school teaching building is studied at two construction stages. The formal six-LLM matrix combines two stages, five sensor profiles (SP1–SP5), and eight scenarios per stage (F-SC1–F-SC8 and E-SC1–E-SC8). [Table S3](Supplementary_Tables/S3/) records the profiles and priority regions. The [stage visualization index](Figures/Stage_Visualizations/) links all current floor overviews and scenario images.
+A primary school teaching building is studied at two construction stages. The formal six-LLM matrix combines two stages, five sensor profiles (SP1–SP5), and eight scenarios per stage (F-SC1–F-SC8 and E-SC1–E-SC8). [Table S3](Supplementary_Tables/S3/) records the profiles and priority regions. The [stage visualization index](stage_visualizations/) links all current floor overviews and scenario images.
 
 ### Fig. S10 Construction-stage priority regions by floor
 
@@ -237,9 +237,9 @@ The six panels place the F-SC and E-SC scenarios into the 1F, 2F, and 3F IFC flo
 
 | Fig. S10 panel | Structural-frame stage | Fig. S10 panel | Wall-and-enclosure stage |
 | --- | --- | --- | --- |
-| **(a)** Frame 1F | <img src="Figures/Stage_Visualizations/frame/Frame_SC_Overview_1F.png" width="350" alt="Fig. S10(a) frame 1F" /> | **(d)** Enclosure 1F | <img src="Figures/Stage_Visualizations/enclosure/Enclosure_SC_Overview_1F.png" width="350" alt="Fig. S10(d) enclosure 1F" />
-| **(b)** Frame 2F | <img src="Figures/Stage_Visualizations/frame/Frame_SC_Overview_2F.png" width="350" alt="Fig. S10(b) frame 2F" /> | **(e)** Enclosure 2F | <img src="Figures/Stage_Visualizations/enclosure/Enclosure_SC_Overview_2F.png" width="350" alt="Fig. S10(e) enclosure 2F" />
-| **(c)** Frame 3F | <img src="Figures/Stage_Visualizations/frame/Frame_SC_Overview_3F.png" width="350" alt="Fig. S10(c) frame 3F" /> | **(f)** Enclosure 3F | <img src="Figures/Stage_Visualizations/enclosure/Enclosure_SC_Overview_3F.png" width="350" alt="Fig. S10(f) enclosure 3F" />
+| **(a)** Frame 1F | <img src="stage_visualizations/frame/Frame_SC_Overview_1F.png" width="350" alt="Fig. S10(a) frame 1F" /> | **(d)** Enclosure 1F | <img src="stage_visualizations/enclosure/Enclosure_SC_Overview_1F.png" width="350" alt="Fig. S10(d) enclosure 1F" />
+| **(b)** Frame 2F | <img src="stage_visualizations/frame/Frame_SC_Overview_2F.png" width="350" alt="Fig. S10(b) frame 2F" /> | **(e)** Enclosure 2F | <img src="stage_visualizations/enclosure/Enclosure_SC_Overview_2F.png" width="350" alt="Fig. S10(e) enclosure 2F" />
+| **(c)** Frame 3F | <img src="stage_visualizations/frame/Frame_SC_Overview_3F.png" width="350" alt="Fig. S10(c) frame 3F" /> | **(f)** Enclosure 3F | <img src="stage_visualizations/enclosure/Enclosure_SC_Overview_3F.png" width="350" alt="Fig. S10(f) enclosure 3F" />
 
 ### Fig. S11 and Fig. S12 Individual smart-construction scenarios
 
@@ -247,24 +247,24 @@ Each row shows the priority-region plan (Fig. S11) and corresponding 3D view (Fi
 
 | Scenario and activity | Fig. S11 priority-region plan | Fig. S12 3D view |
 | --- | --- | --- |
-| **F-SC1: Column inspection** | **Fig. S11(a)**<br><img src="Figures/Stage_Visualizations/frame/scenarios/F-SC1_Column_inspection.png" width="300" alt="Fig. S11(a) F-SC1 plan" /> | **Fig. S12(a)**<br><img src="Figures/Stage_Visualizations/frame/scenarios/F-SC1_3D.png" width="300" alt="Fig. S12(a) F-SC1 3D" /> |
-| **F-SC2: Beam inspection** | **Fig. S11(b)**<br><img src="Figures/Stage_Visualizations/frame/scenarios/F-SC2_Beam_inspection.png" width="300" alt="Fig. S11(b) F-SC2 plan" /> | **Fig. S12(b)**<br><img src="Figures/Stage_Visualizations/frame/scenarios/F-SC2_3D.png" width="300" alt="Fig. S12(b) F-SC2 3D" /> |
-| **F-SC3: Slab-edge inspection** | **Fig. S11(c)**<br><img src="Figures/Stage_Visualizations/frame/scenarios/F-SC3_Slab-edge_inspection.png" width="300" alt="Fig. S11(c) F-SC3 plan" /> | **Fig. S12(c)**<br><img src="Figures/Stage_Visualizations/frame/scenarios/F-SC3_3D.png" width="300" alt="Fig. S12(c) F-SC3 3D" /> |
-| **F-SC4: Layout marking** | **Fig. S11(d)**<br><img src="Figures/Stage_Visualizations/frame/scenarios/F-SC4_Layout_marking.png" width="300" alt="Fig. S11(d) F-SC4 plan" /> | **Fig. S12(d)**<br><img src="Figures/Stage_Visualizations/frame/scenarios/F-SC4_3D.png" width="300" alt="Fig. S12(d) F-SC4 3D" /> |
-| **F-SC5: Structural-material delivery** | **Fig. S11(e)**<br><img src="Figures/Stage_Visualizations/frame/scenarios/F-SC5_Structural-material_delivery.png" width="300" alt="Fig. S11(e) F-SC5 plan" /> | **Fig. S12(e)**<br><img src="Figures/Stage_Visualizations/frame/scenarios/F-SC5_3D.png" width="300" alt="Fig. S12(e) F-SC5 3D" /> |
-| **F-SC6: Structural-material stocktaking** | **Fig. S11(f)**<br><img src="Figures/Stage_Visualizations/frame/scenarios/F-SC6_Structural-material_stocktaking.png" width="300" alt="Fig. S11(f) F-SC6 plan" /> | **Fig. S12(f)**<br><img src="Figures/Stage_Visualizations/frame/scenarios/F-SC6_3D.png" width="300" alt="Fig. S12(f) F-SC6 3D" /> |
-| **F-SC7: Structural-waste sorting** | **Fig. S11(g)**<br><img src="Figures/Stage_Visualizations/frame/scenarios/F-SC7_Structural-waste_sorting.png" width="300" alt="Fig. S11(g) F-SC7 plan" /> | **Fig. S12(g)**<br><img src="Figures/Stage_Visualizations/frame/scenarios/F-SC7_3D.png" width="300" alt="Fig. S12(g) F-SC7 3D" /> |
-| **F-SC8: Safety monitoring** | **Fig. S11(h)**<br><img src="Figures/Stage_Visualizations/frame/scenarios/F-SC8_Safety_monitoring.png" width="300" alt="Fig. S11(h) F-SC8 plan" /> | **Fig. S12(h)**<br><img src="Figures/Stage_Visualizations/frame/scenarios/F-SC8_3D.png" width="300" alt="Fig. S12(h) F-SC8 3D" /> |
-| **E-SC1: Wall plastering** | **Fig. S11(i)**<br><img src="Figures/Stage_Visualizations/enclosure/scenarios/E-SC1_Wall_plastering.png" width="300" alt="Fig. S11(i) E-SC1 plan" /> | **Fig. S12(i)**<br><img src="Figures/Stage_Visualizations/enclosure/scenarios/E-SC1_3D.png" width="300" alt="Fig. S12(i) E-SC1 3D" /> |
-| **E-SC2: Architectural inspection** | **Fig. S11(j)**<br><img src="Figures/Stage_Visualizations/enclosure/scenarios/E-SC2_Architectural_inspection.png" width="300" alt="Fig. S11(j) E-SC2 plan" /> | **Fig. S12(j)**<br><img src="Figures/Stage_Visualizations/enclosure/scenarios/E-SC2_3D.png" width="300" alt="Fig. S12(j) E-SC2 3D" /> |
-| **E-SC3: Finishing-material delivery** | **Fig. S11(k)**<br><img src="Figures/Stage_Visualizations/enclosure/scenarios/E-SC3_Finishing-material_delivery.png" width="300" alt="Fig. S11(k) E-SC3 plan" /> | **Fig. S12(k)**<br><img src="Figures/Stage_Visualizations/enclosure/scenarios/E-SC3_3D.png" width="300" alt="Fig. S12(k) E-SC3 3D" /> |
-| **E-SC4: Joint filling and sealing** | **Fig. S11(l)**<br><img src="Figures/Stage_Visualizations/enclosure/scenarios/E-SC4_Joint_filling_and_sealing.png" width="300" alt="Fig. S11(l) E-SC4 plan" /> | **Fig. S12(l)**<br><img src="Figures/Stage_Visualizations/enclosure/scenarios/E-SC4_3D.png" width="300" alt="Fig. S12(l) E-SC4 3D" /> |
-| **E-SC5: Floor surface operation** | **Fig. S11(m)**<br><img src="Figures/Stage_Visualizations/enclosure/scenarios/E-SC5_Floor_surface_operation.png" width="300" alt="Fig. S11(m) E-SC5 plan" /> | **Fig. S12(m)**<br><img src="Figures/Stage_Visualizations/enclosure/scenarios/E-SC5_3D.png" width="300" alt="Fig. S12(m) E-SC5 3D" /> |
-| **E-SC6: Stair cleaning** | **Fig. S11(n)**<br><img src="Figures/Stage_Visualizations/enclosure/scenarios/E-SC6_Stair_cleaning.png" width="300" alt="Fig. S11(n) E-SC6 plan" /> | **Fig. S12(n)**<br><img src="Figures/Stage_Visualizations/enclosure/scenarios/E-SC6_3D.png" width="300" alt="Fig. S12(n) E-SC6 3D" /> |
-| **E-SC7: Finishing-material stocktaking** | **Fig. S11(o)**<br><img src="Figures/Stage_Visualizations/enclosure/scenarios/E-SC7_Finishing-material_stocktaking.png" width="300" alt="Fig. S11(o) E-SC7 plan" /> | **Fig. S12(o)**<br><img src="Figures/Stage_Visualizations/enclosure/scenarios/E-SC7_3D.png" width="300" alt="Fig. S12(o) E-SC7 3D" /> |
-| **E-SC8: Finishing-waste sorting** | **Fig. S11(p)**<br><img src="Figures/Stage_Visualizations/enclosure/scenarios/E-SC8_Finishing-waste_sorting.png" width="300" alt="Fig. S11(p) E-SC8 plan" /> | **Fig. S12(p)**<br><img src="Figures/Stage_Visualizations/enclosure/scenarios/E-SC8_3D.png" width="300" alt="Fig. S12(p) E-SC8 3D" /> |
+| **F-SC1: Column inspection** | **Fig. S11(a)**<br><img src="stage_visualizations/frame/scenarios/F-SC1_Column_inspection.png" width="300" alt="Fig. S11(a) F-SC1 plan" /> | **Fig. S12(a)**<br><img src="stage_visualizations/frame/scenarios/F-SC1_3D.png" width="300" alt="Fig. S12(a) F-SC1 3D" /> |
+| **F-SC2: Beam inspection** | **Fig. S11(b)**<br><img src="stage_visualizations/frame/scenarios/F-SC2_Beam_inspection.png" width="300" alt="Fig. S11(b) F-SC2 plan" /> | **Fig. S12(b)**<br><img src="stage_visualizations/frame/scenarios/F-SC2_3D.png" width="300" alt="Fig. S12(b) F-SC2 3D" /> |
+| **F-SC3: Slab-edge inspection** | **Fig. S11(c)**<br><img src="stage_visualizations/frame/scenarios/F-SC3_Slab-edge_inspection.png" width="300" alt="Fig. S11(c) F-SC3 plan" /> | **Fig. S12(c)**<br><img src="stage_visualizations/frame/scenarios/F-SC3_3D.png" width="300" alt="Fig. S12(c) F-SC3 3D" /> |
+| **F-SC4: Layout marking** | **Fig. S11(d)**<br><img src="stage_visualizations/frame/scenarios/F-SC4_Layout_marking.png" width="300" alt="Fig. S11(d) F-SC4 plan" /> | **Fig. S12(d)**<br><img src="stage_visualizations/frame/scenarios/F-SC4_3D.png" width="300" alt="Fig. S12(d) F-SC4 3D" /> |
+| **F-SC5: Structural-material delivery** | **Fig. S11(e)**<br><img src="stage_visualizations/frame/scenarios/F-SC5_Structural-material_delivery.png" width="300" alt="Fig. S11(e) F-SC5 plan" /> | **Fig. S12(e)**<br><img src="stage_visualizations/frame/scenarios/F-SC5_3D.png" width="300" alt="Fig. S12(e) F-SC5 3D" /> |
+| **F-SC6: Structural-material stocktaking** | **Fig. S11(f)**<br><img src="stage_visualizations/frame/scenarios/F-SC6_Structural-material_stocktaking.png" width="300" alt="Fig. S11(f) F-SC6 plan" /> | **Fig. S12(f)**<br><img src="stage_visualizations/frame/scenarios/F-SC6_3D.png" width="300" alt="Fig. S12(f) F-SC6 3D" /> |
+| **F-SC7: Structural-waste sorting** | **Fig. S11(g)**<br><img src="stage_visualizations/frame/scenarios/F-SC7_Structural-waste_sorting.png" width="300" alt="Fig. S11(g) F-SC7 plan" /> | **Fig. S12(g)**<br><img src="stage_visualizations/frame/scenarios/F-SC7_3D.png" width="300" alt="Fig. S12(g) F-SC7 3D" /> |
+| **F-SC8: Safety monitoring** | **Fig. S11(h)**<br><img src="stage_visualizations/frame/scenarios/F-SC8_Safety_monitoring.png" width="300" alt="Fig. S11(h) F-SC8 plan" /> | **Fig. S12(h)**<br><img src="stage_visualizations/frame/scenarios/F-SC8_3D.png" width="300" alt="Fig. S12(h) F-SC8 3D" /> |
+| **E-SC1: Wall plastering** | **Fig. S11(i)**<br><img src="stage_visualizations/enclosure/scenarios/E-SC1_Wall_plastering.png" width="300" alt="Fig. S11(i) E-SC1 plan" /> | **Fig. S12(i)**<br><img src="stage_visualizations/enclosure/scenarios/E-SC1_3D.png" width="300" alt="Fig. S12(i) E-SC1 3D" /> |
+| **E-SC2: Architectural inspection** | **Fig. S11(j)**<br><img src="stage_visualizations/enclosure/scenarios/E-SC2_Architectural_inspection.png" width="300" alt="Fig. S11(j) E-SC2 plan" /> | **Fig. S12(j)**<br><img src="stage_visualizations/enclosure/scenarios/E-SC2_3D.png" width="300" alt="Fig. S12(j) E-SC2 3D" /> |
+| **E-SC3: Finishing-material delivery** | **Fig. S11(k)**<br><img src="stage_visualizations/enclosure/scenarios/E-SC3_Finishing-material_delivery.png" width="300" alt="Fig. S11(k) E-SC3 plan" /> | **Fig. S12(k)**<br><img src="stage_visualizations/enclosure/scenarios/E-SC3_3D.png" width="300" alt="Fig. S12(k) E-SC3 3D" /> |
+| **E-SC4: Joint filling and sealing** | **Fig. S11(l)**<br><img src="stage_visualizations/enclosure/scenarios/E-SC4_Joint_filling_and_sealing.png" width="300" alt="Fig. S11(l) E-SC4 plan" /> | **Fig. S12(l)**<br><img src="stage_visualizations/enclosure/scenarios/E-SC4_3D.png" width="300" alt="Fig. S12(l) E-SC4 3D" /> |
+| **E-SC5: Floor surface operation** | **Fig. S11(m)**<br><img src="stage_visualizations/enclosure/scenarios/E-SC5_Floor_surface_operation.png" width="300" alt="Fig. S11(m) E-SC5 plan" /> | **Fig. S12(m)**<br><img src="stage_visualizations/enclosure/scenarios/E-SC5_3D.png" width="300" alt="Fig. S12(m) E-SC5 3D" /> |
+| **E-SC6: Stair cleaning** | **Fig. S11(n)**<br><img src="stage_visualizations/enclosure/scenarios/E-SC6_Stair_cleaning.png" width="300" alt="Fig. S11(n) E-SC6 plan" /> | **Fig. S12(n)**<br><img src="stage_visualizations/enclosure/scenarios/E-SC6_3D.png" width="300" alt="Fig. S12(n) E-SC6 3D" /> |
+| **E-SC7: Finishing-material stocktaking** | **Fig. S11(o)**<br><img src="stage_visualizations/enclosure/scenarios/E-SC7_Finishing-material_stocktaking.png" width="300" alt="Fig. S11(o) E-SC7 plan" /> | **Fig. S12(o)**<br><img src="stage_visualizations/enclosure/scenarios/E-SC7_3D.png" width="300" alt="Fig. S12(o) E-SC7 3D" /> |
+| **E-SC8: Finishing-waste sorting** | **Fig. S11(p)**<br><img src="stage_visualizations/enclosure/scenarios/E-SC8_Finishing-waste_sorting.png" width="300" alt="Fig. S11(p) E-SC8 plan" /> | **Fig. S12(p)**<br><img src="stage_visualizations/enclosure/scenarios/E-SC8_3D.png" width="300" alt="Fig. S12(p) E-SC8 3D" /> |
 
-All 1F–3F stage views and the original-resolution scenario images are retained under [`Figures/Stage_Visualizations/`](Figures/Stage_Visualizations/).
+All 1F–3F stage views and the original-resolution scenario images are retained under [`stage_visualizations/`](stage_visualizations/).
 
 ## 4.2 Results and performance comparison
 
@@ -294,19 +294,35 @@ The PM comparison uses the SP3 profile at 23 dBm and the SC1 priority scenario (
 
 ### Expert 3D stacked heatmaps — Frame stage (Fig. S13, panels a–c)
 
-| <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/Figures/Results/stacked_registered_heatmaps/frame_EbM1_rsrp_stacked.png?raw=true" width="280" alt="EbM1 Frame RSRP" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/Figures/Results/stacked_registered_heatmaps/frame_EbM2_rsrp_stacked.png?raw=true" width="280" alt="EbM2 Frame RSRP" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/Figures/Results/stacked_registered_heatmaps/frame_EbM3_rsrp_stacked.png?raw=true" width="280" alt="EbM3 Frame RSRP" /> |
+| <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/stacked_registered_heatmaps/frame_EbM1_rsrp_stacked.png?raw=true" width="280" alt="EbM1 Frame RSRP" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/stacked_registered_heatmaps/frame_EbM2_rsrp_stacked.png?raw=true" width="280" alt="EbM2 Frame RSRP" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/stacked_registered_heatmaps/frame_EbM3_rsrp_stacked.png?raw=true" width="280" alt="EbM3 Frame RSRP" /> |
 |:--:|:--:|:--:|
 | **(a)** Frame EbM1 (Huawei) — RSRP | **(b)** Frame EbM2 (Akuvox) — RSRP | **(c)** Frame EbM3 (Siemens) — RSRP |
 
+| <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/stacked_registered_heatmaps/frame_EbM1_rsrq_stacked.png?raw=true" width="280" alt="EbM1 Frame RSRQ" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/stacked_registered_heatmaps/frame_EbM2_rsrq_stacked.png?raw=true" width="280" alt="EbM2 Frame RSRQ" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/stacked_registered_heatmaps/frame_EbM3_rsrq_stacked.png?raw=true" width="280" alt="EbM3 Frame RSRQ" /> |
+|:--:|:--:|:--:|
+| Frame EbM1 (Huawei) — RSRQ | Frame EbM2 (Akuvox) — RSRQ | Frame EbM3 (Siemens) — RSRQ |
+
+| <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/stacked_registered_heatmaps/frame_EbM1_sinr_stacked.png?raw=true" width="280" alt="EbM1 Frame SINR" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/stacked_registered_heatmaps/frame_EbM2_sinr_stacked.png?raw=true" width="280" alt="EbM2 Frame SINR" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/stacked_registered_heatmaps/frame_EbM3_sinr_stacked.png?raw=true" width="280" alt="EbM3 Frame SINR" /> |
+|:--:|:--:|:--:|
+| Frame EbM1 (Huawei) — SINR | Frame EbM2 (Akuvox) — SINR | Frame EbM3 (Siemens) — SINR |
+
 ### Expert 3D stacked heatmaps — Enclosure stage (Fig. S14, panels a–c)
 
-| <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/Figures/Results/stacked_registered_heatmaps/enclosure_EbM1_rsrp_stacked.png?raw=true" width="280" alt="EbM1 Enclosure RSRP" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/Figures/Results/stacked_registered_heatmaps/enclosure_EbM2_rsrp_stacked.png?raw=true" width="280" alt="EbM2 Enclosure RSRP" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/Figures/Results/stacked_registered_heatmaps/enclosure_EbM3_rsrp_stacked.png?raw=true" width="280" alt="EbM3 Enclosure RSRP" /> |
+| <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/stacked_registered_heatmaps/enclosure_EbM1_rsrp_stacked.png?raw=true" width="280" alt="EbM1 Enclosure RSRP" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/stacked_registered_heatmaps/enclosure_EbM2_rsrp_stacked.png?raw=true" width="280" alt="EbM2 Enclosure RSRP" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/stacked_registered_heatmaps/enclosure_EbM3_rsrp_stacked.png?raw=true" width="280" alt="EbM3 Enclosure RSRP" /> |
 |:--:|:--:|:--:|
 | **(a)** Enclosure EbM1 (Huawei) — RSRP | **(b)** Enclosure EbM2 (Akuvox) — RSRP | **(c)** Enclosure EbM3 (Siemens) — RSRP |
 
+| <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/stacked_registered_heatmaps/enclosure_EbM1_rsrq_stacked.png?raw=true" width="280" alt="EbM1 Enclosure RSRQ" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/stacked_registered_heatmaps/enclosure_EbM2_rsrq_stacked.png?raw=true" width="280" alt="EbM2 Enclosure RSRQ" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/stacked_registered_heatmaps/enclosure_EbM3_rsrq_stacked.png?raw=true" width="280" alt="EbM3 Enclosure RSRQ" /> |
+|:--:|:--:|:--:|
+| Enclosure EbM1 (Huawei) — RSRQ | Enclosure EbM2 (Akuvox) — RSRQ | Enclosure EbM3 (Siemens) — RSRQ |
+
+| <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/stacked_registered_heatmaps/enclosure_EbM1_sinr_stacked.png?raw=true" width="280" alt="EbM1 Enclosure SINR" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/stacked_registered_heatmaps/enclosure_EbM2_sinr_stacked.png?raw=true" width="280" alt="EbM2 Enclosure SINR" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/stacked_registered_heatmaps/enclosure_EbM3_sinr_stacked.png?raw=true" width="280" alt="EbM3 Enclosure SINR" /> |
+|:--:|:--:|:--:|
+| Enclosure EbM1 (Huawei) — SINR | Enclosure EbM2 (Akuvox) — SINR | Enclosure EbM3 (Siemens) — SINR |
+
 ### Violin plots — Expert comparison (Fig. S15, panels a–b)
 
-| <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/Figures/Results/violin/violin_expert_frame.png?raw=true" width="420" alt="Expert Frame Violin" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/Figures/Results/violin/violin_expert_enclosure.png?raw=true" width="420" alt="Expert Enclosure Violin" /> |
+| <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/violin/violin_expert_frame.png?raw=true" width="420" alt="Expert Frame Violin" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/violin/violin_expert_enclosure.png?raw=true" width="420" alt="Expert Enclosure Violin" /> |
 |:--:|:--:|
 | **(a)** PM vs EbM1/EbM2/EbM3 — Frame stage | **(b)** PM vs EbM1/EbM2/EbM3 — Enclosure stage |
 
@@ -320,19 +336,35 @@ The PM comparison uses the SP3 profile at 23 dBm and the SC1 priority scenario (
 
 ### Geometric 3D stacked heatmaps — Frame stage (Fig. S16, panels a–b)
 
-| <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/Figures/Results/stacked_registered_heatmaps/frame_GcM1_rsrp_stacked.png?raw=true" width="420" alt="GcM1 Frame RSRP" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/Figures/Results/stacked_registered_heatmaps/frame_GcM2_rsrp_stacked.png?raw=true" width="420" alt="GcM2 Frame RSRP" /> |
+| <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/stacked_registered_heatmaps/frame_GcM1_rsrp_stacked.png?raw=true" width="420" alt="GcM1 Frame RSRP" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/stacked_registered_heatmaps/frame_GcM2_rsrp_stacked.png?raw=true" width="420" alt="GcM2 Frame RSRP" /> |
 |:--:|:--:|
 | **(a)** Frame GcM1 (Hexagonal) — RSRP | **(b)** Frame GcM2 (Circular) — RSRP |
 
+| <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/stacked_registered_heatmaps/frame_GcM1_rsrq_stacked.png?raw=true" width="420" alt="GcM1 Frame RSRQ" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/stacked_registered_heatmaps/frame_GcM2_rsrq_stacked.png?raw=true" width="420" alt="GcM2 Frame RSRQ" /> |
+|:--:|:--:|
+| Frame GcM1 (Hexagonal) — RSRQ | Frame GcM2 (Circular) — RSRQ |
+
+| <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/stacked_registered_heatmaps/frame_GcM1_sinr_stacked.png?raw=true" width="420" alt="GcM1 Frame SINR" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/stacked_registered_heatmaps/frame_GcM2_sinr_stacked.png?raw=true" width="420" alt="GcM2 Frame SINR" /> |
+|:--:|:--:|
+| Frame GcM1 (Hexagonal) — SINR | Frame GcM2 (Circular) — SINR |
+
 ### Geometric 3D stacked heatmaps — Enclosure stage (Fig. S17, panels a–b)
 
-| <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/Figures/Results/stacked_registered_heatmaps/enclosure_GcM1_rsrp_stacked.png?raw=true" width="420" alt="GcM1 Enclosure RSRP" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/Figures/Results/stacked_registered_heatmaps/enclosure_GcM2_rsrp_stacked.png?raw=true" width="420" alt="GcM2 Enclosure RSRP" /> |
+| <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/stacked_registered_heatmaps/enclosure_GcM1_rsrp_stacked.png?raw=true" width="420" alt="GcM1 Enclosure RSRP" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/stacked_registered_heatmaps/enclosure_GcM2_rsrp_stacked.png?raw=true" width="420" alt="GcM2 Enclosure RSRP" /> |
 |:--:|:--:|
 | **(a)** Enclosure GcM1 (Hexagonal) — RSRP | **(b)** Enclosure GcM2 (Circular) — RSRP |
 
+| <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/stacked_registered_heatmaps/enclosure_GcM1_rsrq_stacked.png?raw=true" width="420" alt="GcM1 Enclosure RSRQ" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/stacked_registered_heatmaps/enclosure_GcM2_rsrq_stacked.png?raw=true" width="420" alt="GcM2 Enclosure RSRQ" /> |
+|:--:|:--:|
+| Enclosure GcM1 (Hexagonal) — RSRQ | Enclosure GcM2 (Circular) — RSRQ |
+
+| <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/stacked_registered_heatmaps/enclosure_GcM1_sinr_stacked.png?raw=true" width="420" alt="GcM1 Enclosure SINR" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/stacked_registered_heatmaps/enclosure_GcM2_sinr_stacked.png?raw=true" width="420" alt="GcM2 Enclosure SINR" /> |
+|:--:|:--:|
+| Enclosure GcM1 (Hexagonal) — SINR | Enclosure GcM2 (Circular) — SINR |
+
 ### Violin plots — Geometric comparison (Fig. S18, panels a–b)
 
-| <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/Figures/Results/violin/violin_geometric_frame.png?raw=true" width="420" alt="Geometric Frame Violin" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/Figures/Results/violin/violin_geometric_enclosure.png?raw=true" width="420" alt="Geometric Enclosure Violin" /> |
+| <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/violin/violin_geometric_frame.png?raw=true" width="420" alt="Geometric Frame Violin" /> | <img src="https://github.com/yuzhongdexishu/wap-placement-moo/blob/main/plots/violin/violin_geometric_enclosure.png?raw=true" width="420" alt="Geometric Enclosure Violin" /> |
 |:--:|:--:|
 | **(a)** PM vs GcM1/GcM2 — Frame stage | **(b)** PM vs GcM1/GcM2 — Enclosure stage |
 
